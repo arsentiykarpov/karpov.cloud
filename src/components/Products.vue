@@ -1,19 +1,20 @@
 <template>
   <div 
-    v-html="renderedMarkdown" 
+    v-html="renderedMarkdownIt" 
     class="markdown-preview">
   </div>
 </template>
 
 <script>
 import {ref, computed} from "vue"
-import {marked} from "marked"
+import markdownit from "markdown-it"
 
 export default {
 	setup() {
+		const md = markdownit({html: true})
 		const markdownRaw = ref(require('../assets/md/Продукты.md').default)
-		const renderedMarkdown = computed(()=>marked(markdownRaw.value))
-		return {renderedMarkdown}
+		const renderedMarkdownIt = computed(()=>md.render(markdownRaw.value))
+		return {renderedMarkdownIt}
 	},
 };
 </script>
