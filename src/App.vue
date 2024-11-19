@@ -1,17 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Arsentii Karpov"/>
+  <img alt="Vue logo" src="../ya.jpg" style="width: 55vw; min-width: 330px;">
+  <Products msg="Arsentii Karpov"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Products from './components/Products.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Products
   }
-}
+} 
 </script>
 
 <style>
