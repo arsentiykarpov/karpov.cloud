@@ -1,0 +1,19 @@
+
+md.renderer.rules.bullet_list_open = function () {// Example of processing indented content
+	  return '<div class="dropdown-list">';
+};
+md.renderer.rules.bullet_list_close = function () {
+  return '</div>';
+};
+md.renderer.rules.list_item_open = function (tokens, idx) {
+  return `<div class="dropdown-item">
+	<button class="dropdown-button">`;
+};
+md.renderer.rules.list_item_close = function () {
+	  return `</button>
+		<div class="dropdown-content">
+		  <!-- Content will go here -->
+		</div>
+	  </div>`;
+};
+

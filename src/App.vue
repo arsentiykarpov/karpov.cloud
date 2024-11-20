@@ -1,16 +1,27 @@
 <template>
-  <img alt="Vue logo" src="../ya.jpg" style="width: 55vw; min-width: 330px;">
-  <Products msg="Arsentii Karpov"/>
+<div>
+  <b-button v-b-toggle.collapse-1 variant="primary">Toggle Collapse</b-button>
+  <b-collapse id="collapse-1" class="mt-2">
+    <b-card>
+      <p class="card-text">Collapse contents Here</p>
+      <b-button v-b-toggle.collapse-1-inner size="sm">Toggle Inner Collapse</b-button>
+      <b-collapse id="collapse-1-inner" class="mt-2">
+        <b-card>Hello!</b-card>
+      </b-collapse>
+    </b-card>
+  </b-collapse>
+</div>
 </template>
 
 <script>
-import Products from './components/Products.vue'
+// import Products from './components/Products.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    Products
-  }
+//  components: {
+//    Products
+//  }
 } 
 </script>
 

@@ -1,6 +1,4 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
   devServer: {
     allowedHosts: ['karpov.cloud'], // Add your domain here
     proxy: {
@@ -19,4 +17,4 @@ module.exports = defineConfig({
       .loader('raw-loader')
       .end();
   }
-})
+}
