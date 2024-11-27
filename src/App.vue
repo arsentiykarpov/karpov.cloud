@@ -1,7 +1,8 @@
 <template>
     <b-carousel
       id="carousel-1"
-      indicators
+      :interval="0"
+			indicators
       controls
       background="#ababab"
       img-width="1024"
@@ -10,37 +11,26 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-					<b-carousel-slide
-							caption=" "
-						img-src="https://picsum.photos/1024/480/?image=52"
-					>
-					<Products mdContentPath="./md/Products.md" />	
-					</b-carousel-slide>
-
-					<b-carousel-slide
-							caption=" "
-						img-src="https://picsum.photos/1024/480/?image=52"
-					>
-					<Products mdContentPath="./md/Products.md" />	
-					</b-carousel-slide>
-
-					<b-carousel-slide
-							caption=" "
-						img-src="https://picsum.photos/1024/480/?image=52"
-					>
-					<Products mdContentPath="./md/Products.md" />	
-					</b-carousel-slide>
-
-					<b-carousel-slide
-							caption=" "
-						img-src="https://picsum.photos/1024/480/?image=52"
-					>
-					<Products mdContentPath="./md/Products.md" />	
-					</b-carousel-slide>
-
-
-
-
+		<b-carousel-slide
+				caption=" "
+			img-src="https://picsum.photos/1024/480/?image=52"
+		>
+		<Products mdContentPath="./md/Products.md" />	
+		</b-carousel-slide>
+		
+		<b-carousel-slide
+				caption=" "
+			img-src="https://picsum.photos/1024/480/?image=52"
+		>
+		<Products mdContentPath="./md/Teamlead.md" />	
+		</b-carousel-slide>
+		
+		<b-carousel-slide
+				caption=" "
+			img-src="https://picsum.photos/1024/480/?image=52"
+		>
+		<Products mdContentPath="./md/Techlead.md" />	
+		</b-carousel-slide>
 	</b-carousel>
 </template>
 
