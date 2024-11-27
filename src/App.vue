@@ -1,4 +1,5 @@
 <template>
+	<div>
     <b-carousel
       id="carousel-1"
       :interval="0"
@@ -11,6 +12,14 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
+		<b-carousel-slide
+				caption=" "
+			img-src="https://picsum.photos/1024/480/?image=52"
+		>
+		<b-img src="./ars-playboy.png" style="height: 200px; bottom: 100px"></b-img>
+
+		</b-carousel-slide>
+
 		<b-carousel-slide
 				caption=" "
 			img-src="https://picsum.photos/1024/480/?image=52"
@@ -32,6 +41,7 @@
 		<Products mdContentPath="./md/Techlead.md" />	
 		</b-carousel-slide>
 	</b-carousel>
+	    </div>
 </template>
 
 <script>
