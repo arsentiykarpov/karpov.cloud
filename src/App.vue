@@ -1,37 +1,71 @@
 <template>
-<div>
-  <b-button v-b-toggle.collapse-1 variant="primary">Toggle Collapse</b-button>
-  <b-collapse id="collapse-1" class="mt-2">
-    <b-card>
-      <p class="card-text">Collapse contents Here</p>
-      <b-button v-b-toggle.collapse-1-inner size="sm">Toggle Inner Collapse</b-button>
-      <b-collapse id="collapse-1-inner" class="mt-2">
-        <b-card>Hello!</b-card>
-      </b-collapse>
-    </b-card>
-  </b-collapse>
-</div>
+  <div id="app">
+    <div class="scrollable-container">
+			<Products/>
+    </div>
+  </div>
 </template>
 
 <script>
-// import Products from './components/Products.vue'
-
+import Products from './components/Products.vue'
 
 export default {
   name: 'App',
-//  components: {
-//    Products
-//  }
+  components: {
+    Products
+  }
 } 
+
 </script>
 
 <style>
-#app {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+
+@font-face {
+  font-family: 'Monoid';
+  src: url('assets/fonts/Monoisome-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monoid-Bold';
+  src: url('assets/fonts/Monoid-Bold-HalfTight-Small-Dollar-0-1-l-NoCalt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'FiraCode'; 
+  src: url('assets/fonts/FiraCode/woff/FiraCode-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FiraCode-Bold';
+  src: url('assets/fonts/FiraCode/woff/FiraCode-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+strong {
+	font-family: 'FiraCode-Bold';
+	font-size: 12px;
+	
+}
+
+blockquote {
+  font-family: 'FiraCode';
+  font-size: 10px; 
+}
+
+.scrollable-container {
+  height: 50vh; /* 50% of the viewport height */
+  width: 50vw; /* 50% of the viewport width */
+  overflow-y: auto; /* Makes the container scrollable */
+  border: 1px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optional styling */
+  box-sizing: border-box; /* Include padding and border in the width/height */
 }
 </style>
