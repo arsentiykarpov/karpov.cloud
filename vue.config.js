@@ -14,7 +14,7 @@ module.exports = {
   
   // Disable Lint on Save
   lintOnSave: false,
-
+ 
   // Webpack Chain Configuration
   chainWebpack: (config) => {
     // Add Markdown Loader

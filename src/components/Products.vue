@@ -1,63 +1,63 @@
 <template>
-<div>
-	<div v-html="renderedMarkdownIt"></div>
-</div>
+	<div class="scrollable-container" v-html="renderedMarkdownIt"></div>
 </template>
 
 <script>
-import { ref, computed } from "vue";
+import { ref, computed, onMounted } from "vue";
 import markdownit from "markdown-it";
-import MDContent from "../assets/md/Products.md";
-import deflist from 'markdown-it-deflist';
- 
+import deflist from "markdown-it-deflist";
+
 export default {
-  setup() {
-    const md = markdownit({ html: true }).use(deflist)
-    const markdownRaw = ref(MDContent);
-    const renderedMarkdownIt = computed(() =>
-      md.render(markdownRaw.value)
-    );
-    console.log("Rendered Markdown-it Output:", md.render(markdownRaw.value));
+  name: "Products",
+  props: {
+    mdContentPath: {
+      type: String,
+      required: true,
+    },
+  },
+  setup(props) {
+    const md = markdownit({ html: true }).use(deflist);
+    const markdownRaw = ref("");
+
+    const renderedMarkdownIt = computed(() => md.render(markdownRaw.value));
+
+    const loadMarkdown = async () => {
+      try {
+        const response = await fetch(props.mdContentPath);
+        markdownRaw.value = await response.text();
+      } catch (error) {
+        console.error("Error loading markdown file:", error);
+        markdownRaw.value = "Error loading content.";
+      }
+    };
+
+    onMounted(loadMarkdown);
+
     return { renderedMarkdownIt };
   },
 };
 </script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.dropdown-list {
-  font-family: Arial, sans-serif;
+.scrollable-container {
+height: 90%;	
+  overflow-y: auto; /* Makes the container scrollable */
+  border: 0px solid #ccc; /* Optional styling */
+  padding: 10px; /* Optionail styling */
+  box-sizing: border-box; /* Include padding and border in the width/height */
+	backdrop-filter: blur(10px); /* Applies the blur effect */
+	background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-radius: 10px; /* Optional, for rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional, for better visuals */
+  padding: 20px;
 }
 
-.dropdown-item {
-  margin-bottom: 10px;
+blockquote {
+  font-family: 'FiraCode';
+  font-size: 10px; 
+	text-align: left;
 }
 
-.dropdown-button {
-  width: 100%;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
-  text-align: left;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 
-.dropdown-button:hover {
-  background-color: #45a049;
-}
-
-.dropdown-content {
-  display: none;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-.dropdown-content.active {
-  display: block;
-}
 </style>
