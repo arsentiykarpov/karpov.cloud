@@ -39,19 +39,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 /* Ensure the content takes the full height of the carousel */
-.scrollable-carousel-content {
-  max-height: 100%; /* Let the content take full height of the carousel slide */
-  overflow: hidden; /* Prevent content from overflowing */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  box-sizing: border-box;
-}
 
 /* The scrollable container */
 .scrollable-container {
-  max-height: 55vh; /* Ensures content stays within the carousel limits */
+  max-height: calc(70vh - 60px); /* Ensures content stays within the carousel limits */
+	min-height: calc(60vh);
   overflow-y: auto; /* Makes the content scrollable when it exceeds the max height */
   padding: 14px;
   box-sizing: border-box;
@@ -62,6 +54,12 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
   color: #fff; /* Text color for readability */
   overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+@media (max-width: 600px) {
+	.scrollable-container {
+		max-height: calc(50vh - 80px);
+	}
 }
 
 /* Links styling */

@@ -46,18 +46,26 @@ export default {
 </script>
 
 <style scoped>
+>>>.carousel-control-prev {
+	width: 5%;
+}
+
+>>>.carousel-control-next {
+	width: 5%;
+}
+
 /* Prevent hiding content if carousel-caption is present */
 >>>.carousel-caption {
   max-height: 90%; /* Set a max height relative to the parent or desired size */
 	max-width: 90%;
-  padding: 10px;
+	min-height: 80%;
 	overflow: hidden;
   color: white; /* Ensure text is readable */
   border-radius: 10px; /* Add rounded corners */
 	top: 0px;
 	bottom: 0px;
-	left: 10%;
-	right: 10%;
+	left: 5%;
+	right: 5%;
 }
 </style>
 
@@ -79,6 +87,7 @@ blockquote {
   max-width: 100%;
   max-height: 70vh; /* Half of the viewport height */
   overflow: hidden;
+	border-radius: 6px;
 }
 
 /* Adjust images to fit within the carousel */
