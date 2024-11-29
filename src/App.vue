@@ -54,18 +54,26 @@ export default {
 	width: 5%;
 }
 
-/* Prevent hiding content if carousel-caption is present */
 >>>.carousel-caption {
-  max-height: 90%; /* Set a max height relative to the parent or desired size */
+  max-height: calc(75vh - 60px); 
+	min-height: calc(60vh);
 	max-width: 90%;
-	min-height: 80%;
 	overflow: hidden;
-  color: white; /* Ensure text is readable */
-  border-radius: 10px; /* Add rounded corners */
+  color: white; 
+  border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	top: 0px;
 	bottom: 0px;
 	left: 5%;
 	right: 5%;
+}
+
+@media (max-width: 600px) {
+	>>>.carousel-caption {
+		max-height: calc(65vh - 80px);
+		min-height: calc(60vh - 80px);
+	}
 }
 </style>
 
