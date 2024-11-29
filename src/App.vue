@@ -63,13 +63,13 @@ export default {
 <style>
 strong {
 	font-family: 'FiraCode-Bold';
-	font-size: 12px;
+	font-size: 13px;
 	
 }
 
 blockquote {
   font-family: 'FiraCode';
-  font-size: 10px; 
+  font-size: 12px; 
 	text-align: left;
 }
 

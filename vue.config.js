@@ -24,6 +24,11 @@ module.exports = {
       .use('raw-loader')
       .loader('raw-loader')
       .end();
+
+		config.plugin('html').tap((args) => {
+			args[0].title = "Vote for Arsentii Karpov";
+			return args;
+		});
   },
 
   // Webpack Alias Configuration
