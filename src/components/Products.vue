@@ -37,26 +37,40 @@ export default {
 };
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+/* Ensure the content takes the full height of the carousel */
+.scrollable-carousel-content {
+  max-height: 100%; /* Let the content take full height of the carousel slide */
+  overflow: hidden; /* Prevent content from overflowing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* The scrollable container */
 .scrollable-container {
-height: 95%;	
-  overflow-y: auto; /* Makes the container scrollable */
-  border: 0px solid #ccc; /* Optional styling */
-  padding: 10px; /* Optionail styling */
-  box-sizing: border-box; /* Include padding and border in the width/height */
-	backdrop-filter: blur(10px); /* Applies the blur effect */
-	background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border-radius: 10px; /* Optional, for rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional, for better visuals */
+  max-height: 55vh; /* Ensures content stays within the carousel limits */
+  overflow-y: auto; /* Makes the content scrollable when it exceeds the max height */
   padding: 14px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px); /* Applies a blur effect */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+  color: #fff; /* Text color for readability */
+  overflow-x: hidden; /* Disable horizontal scrolling */
 }
 
-blockquote {
-  font-family: 'FiraCode';
-  font-size: 10px; 
-	text-align: left;
+/* Links styling */
+a {
+  color: #48C9B0; /* Link color */
+  text-decoration: none; /* Remove underline */
 }
 
-
+a:hover {
+  color: #F5B041; /* Change color on hover */
+}
 </style>

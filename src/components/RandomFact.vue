@@ -5,7 +5,7 @@
 		{{ randomFact }}
 		{{ debugIndex }}
   </b-card-text>
-  <b-button @click="generateRandomFact" variant="primary">ещё</b-button>
+  <b-button @click="generateRandomFact" variant="outline-info">ещё</b-button>
 	</b-card>
 	</div>
 </template>
@@ -72,5 +72,5 @@ export default {
 	border: none;
 	background-color: transparent;
 	box-shadow: none;
-}
+}		
 </style>
