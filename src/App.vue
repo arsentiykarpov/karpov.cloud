@@ -56,7 +56,7 @@ export default {
 
 >>>.carousel-caption {
   max-height: calc(75vh - 60px); 
-	min-height: calc(60vh);
+	min-height: 50%;
 	max-width: 90%;
 	overflow: hidden;
   color: white; 
@@ -71,8 +71,8 @@ export default {
 
 @media (max-width: 600px) {
 	>>>.carousel-caption {
-		max-height: calc(65vh - 80px);
-		min-height: calc(60vh - 80px);
+		max-height: calc(45vh - 80px);
+		min-height: 50%;
 	}
 }
 </style>
