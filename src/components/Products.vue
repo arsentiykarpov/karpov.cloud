@@ -58,7 +58,7 @@ export default {
   backdrop-filter: blur(10px); /* Applies a blur effect */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
-  border-radius: 2px; /* Rounded corners */
+  border-radius: 6px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
   color: #fff; /* Text color for readability */
   overflow-x: hidden; /* Disable horizontal scrolling */

@@ -5,6 +5,7 @@
       :interval="0"
       indicators
       controls
+			fade
       background="#ababab"
       img-width="1024"
       img-height="480"
