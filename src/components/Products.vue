@@ -1,5 +1,7 @@
 <template>
+	<div class="md-content-conatiner">
 	<div class="scrollable-container" v-html="renderedMarkdownIt"></div>
+	</div>
 </template>
 
 <script>
@@ -39,19 +41,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 /* Ensure the content takes the full height of the carousel */
-
-/* The scrollable container */
-.scrollable-container {
+.md-content-conatiner {
 	height: 100%;
-  overflow-y: auto; 
-  padding: 14px;
-  box-sizing: border-box;
   backdrop-filter: blur(10px); /* Applies a blur effect */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-radius: 6px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
   color: #fff; /* Text color for readability */
+  overflow: hidden; /* Disable horizontal scrolling */
+}
+/* The scrollable container */
+.scrollable-container {
+	height: 100%;
+	margin: 14px;
+  overflow-y: auto; 
   overflow-x: hidden; /* Disable horizontal scrolling */
 }
 

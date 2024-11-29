@@ -55,9 +55,7 @@ export default {
 }
 
 >>>.carousel-caption {
-  max-height: calc(75vh - 60px); 
-	min-height: 50%;
-	max-width: 90%;
+  height: 90%; 
 	overflow: hidden;
   color: white; 
   border-radius: 10px;
@@ -68,13 +66,28 @@ export default {
 	left: 5%;
 	right: 5%;
 }
+	>>>.carousel-item.active {
+		position: relative;
+		max-height: 70vh;/*why relative parent height not working??? so duplicate Viewport height of parent, kind of hack?*/
+	}
+	
+	>>>.carousel-item{
+		position: relative;
+		max-height: 70vh;/*why relative parent height not working??? so duplicate Viewport height of parent, kind of hack?*/
+	}
 
-@media (max-width: 600px) {
+	>>>.carousel-inner {
+		position: relative;
+		overflow: hidden;
+		max-height: 70vh;
+	}
+/*
+@media (max-width: 200px) {
 	>>>.carousel-caption {
 		max-height: calc(45vh - 80px);
 		min-height: 50%;
 	}
-}
+}*/
 </style>
 
 <style>
