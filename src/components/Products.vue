@@ -60,12 +60,12 @@ export default {
 }
 
 /* Links styling */
-a {
+blockquote a {
   color: #48C9B0; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 
-a:hover {
+blockquote a:hover {
   color: #F5B041; /* Change color on hover */
 }
 </style>

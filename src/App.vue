@@ -88,6 +88,16 @@ export default {
 		min-height: 50%;
 	}
 }*/
+	/* Links styling */
+a {
+  color: #48C9B0; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #F5B041; /* Change color on hover */
+}
+
 </style>
 
 <style>
@@ -116,6 +126,15 @@ blockquote {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover; /* Ensure images cover the space without distortion */
+}
+/* Links styling */
+a {
+  color: #48C9B0; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #F5B041; /* Change color on hover */
 }
 
 /* @media screen and (max-width: 768px) {
