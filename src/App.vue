@@ -12,19 +12,19 @@
       class="responsive-carousel"
       style="margin: 20px; text-shadow: 1px 1px 2px #333;"
     >
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=53">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
         <Products mdContentPath="./md/Products.md" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=53">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
         <Products mdContentPath="./md/Teamlead.md" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=53">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
         <Products mdContentPath="./md/Techlead.md" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=53">
+      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
         <b-img src="./ars-playboy.png" style="height: 200px; bottom: 100px"></b-img>
 			</b-carousel-slide>
 		</b-carousel>
