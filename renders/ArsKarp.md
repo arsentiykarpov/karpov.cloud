@@ -22,6 +22,7 @@ telegram: [@arsengizer](https://t.me/arsengizer)
 
 <div style="page-break-after: always;"></div>
 Как **Android разработчик** прошел путь от [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) до [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), через все версии [RxJava](https://github.com/ReactiveX/RxJava).
+
 **Умею**
 
 - Запускать быстро, на коленке, с дедлайном "вчера' на миллионы пользователей.
