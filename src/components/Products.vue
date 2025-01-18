@@ -43,9 +43,9 @@ export default {
 /* Ensure the content takes the full height of the carousel */
 .md-content-conatiner {
 	height: 100%;
-  backdrop-filter: blur(10px); /* Applies a blur effect */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  backdrop-filter: blur(5px); /* Applies a blur effect */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
   border-radius: 6px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
   color: #fff; /* Text color for readability */
@@ -54,7 +54,8 @@ export default {
 /* The scrollable container */
 .scrollable-container {
 	height: 100%;
-	margin: 14px;
+	margin: 20px;
+  margin-right: 40px;
   overflow-y: auto; 
   overflow-x: hidden; /* Disable horizontal scrolling */
 }

@@ -1,5 +1,12 @@
 <template>
   <div>
+    
+    <div class="language-switcher" style="display: flex; justify-content: flex-end; padding-right: 28px;">
+      <a href="#" :class="{ active: language === 'ru' }" @click="switchLanguage('ru')">RU</a>/
+      <a href="#" :class="{ active: language === 'en' }" @click="switchLanguage('en')">EN</a>
+ 
+    </div>
+
     <b-carousel
       id="carousel-1"
       :interval="0"
@@ -7,26 +14,20 @@
       controls
 			fade
       background="#ababab"
-      img-width="1024"
-      img-height="480"
       class="responsive-carousel"
-      style="margin: 20px; text-shadow: 1px 1px 2px #333;"
+      style="margin: 20px; text-shadow: 1px 1px 2px #333;margin-top: 0px;"
     >
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
+      <b-carousel-slide img-src="./bg/bath_cropped.jpg" img-width="1024" img-height="480">
         <Products mdContentPath="./md/Products.md" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
+      <b-carousel-slide img-src="./bg/bath_cropped.jpg">
         <Products mdContentPath="./md/Teamlead.md" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
+      <b-carousel-slide img-src="./bg/bath_cropped.jpg">
         <Products mdContentPath="./md/Techlead.md" />	
       </b-carousel-slide>
-      
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=10">
-        <b-img src="./ars-playboy.png" style="height: 200px; bottom: 100px"></b-img>
-			</b-carousel-slide>
 		</b-carousel>
     <RandomFact />
   </div>
@@ -104,12 +105,12 @@ a:hover {
 /* General styling */
 strong {
   font-family: 'FiraCode-Bold';
-  font-size: 13px;
+  font-size: 15px;
 }
 
 blockquote {
   font-family: 'FiraCode';
-  font-size: 12px;
+  font-size: 14px;
   text-align: left;
 }
 
@@ -129,6 +130,7 @@ blockquote {
 }
 /* Links styling */
 a {
+  font-family: 'FiraCode-Bold';
   color: #48C9B0; /* Link color */
   text-decoration: none; /* Remove underline */
 }
@@ -137,6 +139,9 @@ a:hover {
   color: #F5B041; /* Change color on hover */
 }
 
+body {
+  background-color: #EFF1F4;
+}
 /* @media screen and (max-width: 768px) {
   .responsive-carousel {
     max-height: 60vh; 

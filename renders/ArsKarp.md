@@ -1,6 +1,3 @@
----
-mainfont: "FiraCode-Medium"
----
 <style>
 a {
   color: #48C9B0; /* Link color */
@@ -11,18 +8,22 @@ a {
 a:hover {
   color: #F5B041; /* Change color on hover */
 }
+body {
+  max-height:1024px;
+  background-color:#EFF1F4;
+}
 </style>
 ![](arsres.jpg)
 
 # Арсентий Карпов (12.08.1988)
-### Android Developer / Teamlead
+### Android Developer / Fullstack Developer / Teamlead
 
 web: [karpov.cloud](https://karpov.cloud)<br>
 telegram: [@arsengizer](https://t.me/arsengizer)
 
 <div style="page-break-after: always;"></div>
 Как **Android разработчик** прошел путь от [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) до [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), через все версии [RxJava](https://github.com/ReactiveX/RxJava).
-
+<br><br><br>
 **Умею**
 
 - Запускать быстро, на коленке, с дедлайном "вчера' на миллионы пользователей.
@@ -59,6 +60,8 @@ telegram: [@arsengizer](https://t.me/arsengizer)
 **Сервис бесконтактной оплаты Visa payWave**
 
 - Реализовал внутри Qiwi Кошелька функционал бесконтактной оплаты Visa PayWave при помощи технологии Host Card Emulation без использования Visa SDK, с 0 реализовал протокол [телефон] <---> [POS терминал].  В приложении можно было выпускать токенизированную карту и платить телефоном по  NFC через POS терминал. Первое решение на Российском рынке на тот момент.
+
+<div style="page-break-after: always;"></div>
 
 **Совесть. Карта рассрочки.**
 
