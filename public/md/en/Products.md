@@ -1,25 +1,25 @@
-> <img src="../qiwi.png" height="20px"/>**iwi Кошелек**.
-[Все ещё есть в сторе](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
->> В 2013 году присоединился вторым участником в состав команды Android разработки Qiwi, где начал разрабатывать первые версии Qiwi Кошелька. 
+> <img src="../../qiwi.png" height="20px"/>**iwi Wallet**.
+[Still available in store](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
+>> In 2013 joined as a second member of Qiwi's Android development team, where he started developing the first versions of Qiwi Wallet. 
 
->> С 2016 стал "играющим" тимлидом Android команды Qiwi.
+>> Since 2016 became a “playing” teamleader of Qiwi's Android team.
 
-> **Сервис бесконтактной оплаты Visa payWave**
->> Реализовал внутри Qiwi Кошелька функционал бесконтактной оплаты Visa PayWave	при помощи технологии Host Card Emulation без использования Visa SDK, с 0 реализовал протокол [телефон] <---> [POS терминал]. В приложении можно было выпускать токенизированную карту и платить телефоном по NFC через POS терминал. Первое решение на Российском рынке на тот момент. 
+> **Visa payWave contactless payment service**
+>> Implemented Visa PayWave contactless payment functionality inside Qiwi Wallet using Host Card Emulation technology without using Visa SDK, with 0 implemented [phone] <---> [POS terminal] protocol. In the application it was possible to issue tokenized card and pay by phone via NFC through POS terminal. The first solution on the Russian market at that time. 
 
-> **Совесть. Карта рассрочки.**
->> Разработал первую версию приложения карты рассрочки Совесть.
+> **Trust. Installment card.**
+>> Developed the first version of Sovesti installment card application.
 
->> Далее Совесть отделилась в новое АО со своей группой разработки.
+>> Next, Sovesti spun off into a new JSC with its own development team.
 
-> **Qiwi Инвестор**
->> Разработал первую версию кроссплатформенного приложения для инвестиций Qiwi Инвестор. В качестве кроссплатформенной библиотеки использовали [J2ObjC](https://github.com/google/j2objc).
+>> **Qiwi Investor**
+>> Developed the first version of Qiwi Investor, a cross-platform investment application. Used [J2ObjC](https://github.com/google/j2objc) as the cross-platform library.
 
-> **Ферма устройств**
->> Интегрировал ферму устройств в процессы CI/CD. О чем рассказал на конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI)
+> **Device Farm**
+>> Integrated the device farm into CI/CD processes. Talked about at the [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI) conference
 
-> **Платформа Чата поддержки Qiwi**
->> SDK только клиент (без UI)
+> **Qiwi Support Chat Platform**
+>> SDK client only (no UI)
 
 >> SDK c UI
 
@@ -29,5 +29,6 @@
 >> Разработал первую версию кроссплатформенного проекта Цифрового Рубля.
 
 >> Кроссплатформенная библиотека [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
+
 
 

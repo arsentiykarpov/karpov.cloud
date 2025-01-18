@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import markdownit from "markdown-it";
 
 export default {
@@ -17,24 +17,30 @@ export default {
     },
   },
   setup(props) {
-	const md = markdownit({ html: true })
-	const markdownRaw = ref("");
+    const md = markdownit({ html: true })
+    const markdownRaw = ref("");
 
-	const renderedMarkdownIt = computed(() => md.render(markdownRaw.value));
+    const renderedMarkdownIt = computed(() => md.render(markdownRaw.value));
 
-	const loadMarkdown = async () => {
-	try {
-		const response = await fetch(props.mdContentPath);
-		markdownRaw.value = await response.text();
-	} catch (error) {
-		console.error("Error loading markdown file:", error);
-		markdownRaw.value = "Error loading content.";
-	}
-	};
+    const loadMarkdown = async (path) => {
+    try {
+      const response = await fetch(path);
+      markdownRaw.value = await response.text();
+    } catch (error) {
+      console.error("Error loading markdown file:", error);
+      markdownRaw.value = "Error loading content.";
+    }
+    };
 
-	onMounted(loadMarkdown);
-
-    return { renderedMarkdownIt };
+    onMounted(loadMarkdown(props.mdContentPath));
+    watch(
+      () => props.mdContentPath,
+      (newPath) => {
+        loadMarkdown(newPath);
+      },
+      {immediate: true}
+    );
+   return { renderedMarkdownIt };
   },
 };
 </script>
@@ -55,7 +61,8 @@ export default {
 .scrollable-container {
 	height: 100%;
 	margin: 20px;
-  margin-right: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
   overflow-y: auto; 
   overflow-x: hidden; /* Disable horizontal scrolling */
 }

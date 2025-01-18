@@ -18,15 +18,15 @@
       style="margin: 20px; text-shadow: 1px 1px 2px #333;margin-top: 0px;"
     >
       <b-carousel-slide img-src="./bg/bath_cropped.jpg" img-width="1024" img-height="480">
-        <Products mdContentPath="./md/Products.md" />	
+        <Products :mdContentPath="getPath('Products')" />	App
       </b-carousel-slide>
       
       <b-carousel-slide img-src="./bg/bath_cropped.jpg">
-        <Products mdContentPath="./md/Teamlead.md" />	
+        <Products :mdContentPath="getPath('Teamlead')" />	
       </b-carousel-slide>
       
       <b-carousel-slide img-src="./bg/bath_cropped.jpg">
-        <Products mdContentPath="./md/Techlead.md" />	
+        <Products :mdContentPath="getPath('Techlead')" />	
       </b-carousel-slide>
 		</b-carousel>
     <RandomFact />
@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import {ref, provide} from 'vue';  
 import Products from './components/Products.vue';
 import RandomFact from './components/RandomFact.vue';
 
@@ -42,6 +43,23 @@ export default {
   components: {
     Products,
     RandomFact,
+  },
+  setup() {
+    const language = ref('en');
+    const switchLanguage = (lang) => {
+      language.value = lang;
+    }
+    const getPath = (fileName) => {
+      return `./md/${language.value}/${fileName}.md`;
+    }
+
+    provide('language', language);
+
+    return {
+      language,
+      switchLanguage,
+      getPath,
+    };
   },
 };
 </script>
