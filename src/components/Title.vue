@@ -29,8 +29,8 @@
       const language = inject("language");
       const pdfLink = computed(() => {
         return language.value === 'en' 
-        ? "./en/ArsentiiKarpov.pdf"
-        : "./ru/ArsentiiKarpov.pdf";
+        ? "./pdf/en/ArsentiiKarpov.pdf"
+        : "./pdf/ru/ArsentiiKarpov.pdf";
       });
 
       const title = computed(() => {
@@ -41,8 +41,8 @@
 
       const dPdf = computed(() => {
         return language.value === 'en' 
-        ? "pdf"
-        : "pdf";
+        ? "*.pdf"
+        : "*.pdf";
       });
 
 

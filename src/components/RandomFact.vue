@@ -1,6 +1,6 @@
 <template>
 	<div style="margin:20px">
- 		<b-card border-variant="info" class="text-center" title="Самое важное">
+ 		<b-card border-variant="info" class="text-center" title="...">
   <b-card-text>
 		{{ randomFact }}
   </b-card-text>
