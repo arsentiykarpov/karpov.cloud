@@ -72,7 +72,7 @@ export default {
 
 /* Links styling */
 blockquote a {
-  color: #48C9B0; /* Link color */
+  color: #48c774; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 

@@ -28,6 +28,9 @@
       <b-carousel-slide img-src="./bg/bath_cropped.jpg">
         <Products :mdContentPath="getPath('Techlead')" />	
       </b-carousel-slide>
+      <b-carousel-slide img-src="./bg/ihouse_cropped.jpg">
+        <Products :mdContentPath="getPath('Contacts')" />	
+      </b-carousel-slide>
 		</b-carousel>
     <RandomFact />
   </div>
@@ -111,7 +114,7 @@ export default {
 }*/
 	/* Links styling */
 a {
-  color: #48C9B0; /* Link color */
+  color: #48c774; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 

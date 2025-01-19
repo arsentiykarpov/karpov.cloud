@@ -16,7 +16,7 @@
         font-size: 18px; 
         margin: 0px 0px 0px 0px;
         text-align:center;
-        white-space: nowrap;" @click = "onClick">{{dPdf}}</a>
+        white-space: nowrap;">{{dPdf}}</a>
       </div>
   </div>
 </template>
@@ -46,12 +46,7 @@
       });
 
 
-      const onClick = () => {
-
-      };
-
     return {
-      onClick,
       pdfLink,
       dPdf,
       title
