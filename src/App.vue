@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    <Title/> 
     <div class="language-switcher" style="display: flex; justify-content: flex-end; padding-right: 28px;">
       <a href="#" :class="{ active: language === 'ru' }" @click="switchLanguage('ru')">RU</a>/
       <a href="#" :class="{ active: language === 'en' }" @click="switchLanguage('en')">EN</a>
@@ -37,12 +37,14 @@
 import {ref, provide} from 'vue';  
 import Products from './components/Products.vue';
 import RandomFact from './components/RandomFact.vue';
+import Title from './components/Title.vue';
 
 export default {
   name: 'App',
   components: {
     Products,
     RandomFact,
+    Title,
   },
   setup() {
     const language = ref('en');

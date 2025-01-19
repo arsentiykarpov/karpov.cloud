@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { computed, watch, getCurrentScope, inject, ref } from 'vue' 
+import { computed, watch, inject, ref } from 'vue' 
 
 export default {
 
