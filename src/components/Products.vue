@@ -32,11 +32,14 @@ export default {
     }
     };
 
-    onMounted(loadMarkdown(props.mdContentPath));
+    onMounted(() => { 
+      loadMarkdown(props.mdContentPath).catch(console.error);
+    }
+    );
     watch(
       () => props.mdContentPath,
       (newPath) => {
-        loadMarkdown(newPath);
+        loadMarkdown(newPath).catch(console.error);
       },
       {immediate: true}
     );
@@ -44,7 +47,7 @@ export default {
   },
 };
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style>
 /* Ensure the content takes the full height of the carousel */
 .md-content-conatiner {
