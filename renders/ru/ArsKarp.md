@@ -13,15 +13,18 @@ body {
   background-color:#EFF1F4;
 }
 </style>
-![](arsres.jpg)
+<img src="I1.jpg" width="300" >
+
 # Арсентий Карпов (12.08.1988)
 ### Android Developer / Fullstack Developer / Teamlead
+
 web: [karpov.cloud](https://karpov.cloud)<br>
-telegram: [@arsengizer](https://t.me/arsengizer)
+telegram: [@arsengizer](https://t.me/arsengizer)<br>
 email: [arsentiy.karpov@gmail.com](mailto:arsentiy.karpov@gmail.com)
+
 <div style="page-break-after: always;"></div>
 Как **Android разработчик** прошел путь от [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) до [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), через все версии [RxJava](https://github.com/ReactiveX/RxJava).
-<br><br><br>
+<br><br>
 **Умею**
 
 - Запускать быстро, на коленке, с дедлайном "вчера' на миллионы пользователей.
@@ -41,11 +44,9 @@ email: [arsentiy.karpov@gmail.com](mailto:arsentiy.karpov@gmail.com)
 **Понимаю и прощаю**
 
 - Когда нужна ферма устройств на Kubernetes со сложной схемой CI/CD.
+
 - Когда достаточно одного стажера и небольшого скрипта в репозитории в качестве CI/CD.
 
-Последние пару лет интересуют около **DevOps** темы c его **Kubernetes, Argo CD, Tekton piplines, Grafana/Kibana etc.**. 
-Поднял в Qiwi ферму устройств на Kubernetes. 
-Tekton piplines через ArgoCD + Ansible.
 
 **Отвечая за крупный финтех продукт необходимо помнить о безопасности приложения.**
 
@@ -54,20 +55,32 @@ Tekton piplines через ArgoCD + Ansible.
 - Разработал CTF [Capture The Flag] челлендж для конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4).
 
 - Знаю как работать с Frida на Android и Ghidra на Ios. 
+
+
+Последние пару лет интересуют около **DevOps** темы c его **Kubernetes, Argo CD, Tekton piplines, Grafana/Kibana etc.**. 
+
+- Поднял в Qiwi ферму устройств на Kubernetes. 
+
+- Tekton piplines через ArgoCD + Ansible.
+
+
 ------
 
-**Qiwi Кошелек**
-[Все ещё есть в сторе](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
+<div style="page-break-after: always;"></div>
 
-- В марте 2013 года присоединился вторым участником в состав команды Android разработки Qiwi, где начал разрабатывать первые версии Киви Кошелька.
+**Qiwi Кошелек**(2013-->2024) [Все ещё есть в сторе](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
+
+- В марте 2013 года присоединился вторым участником в состав команды Android разработки Qiwi, где начал разрабатывать первые версии Qiwi Кошелька.
 
 - С 2016 стал "играющим" тимлидом Android команды Qiwi.
+
 
 **Сервис бесконтактной оплаты Visa payWave**
 
 - Реализовал внутри Qiwi Кошелька функционал бесконтактной оплаты Visa PayWave при помощи технологии Host Card Emulation без использования Visa SDK, с 0 реализовал протокол [телефон] <---> [POS терминал].  В приложении можно было выпускать токенизированную карту и платить телефоном по  NFC через POS терминал. Первое решение на Российском рынке на тот момент.
-<div style="page-break-after: always;"></div>
-**Совесть. Карта рассрочки.**
+
+
+**Совесть, Карта рассрочки**
 
 - Разработал первую версию приложения карты рассрочки Совесть.
 
@@ -78,33 +91,48 @@ Tekton piplines через ArgoCD + Ansible.
 
 - Разработал первую версию кроссплатформенного приложения для инвестиций Qiwi Инвестор. В качестве кроссплатформенной библиотеки использовали [J2ObjC](https://github.com/google/j2objc).
 
+
 **Ферма устройств**
 
-- Интегрировал ферму устройств в процессы CI/CD. О чем рассказал на конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI)
+- Интегрировал ферму устройств в процессы CI/CD. О чем рассказал на конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI).
 
 **Платформа Чата поддержки Qiwi**
 
-- SDK только клиент (без UI)
-- SDK c UI
-- Кроссплатформенные версии всех SDK Android/Ios [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
+- SDK только клиент (без UI).
+
+- SDK c UI.
+
+- Кроссплатформенные версии всех SDK Android/Ios [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/).
+
 
 **Цифровой Рубль**
 
 - Разработал первую версию кроссплатформенного проекта Цифрового Рубля.
-- Кроссплатформенная библиотека [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
+
+- Кроссплатформенная библиотека [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/).
 
 
 До Qiwi (до 2013 г.) разрабатывал на C++ в ГосНИИАс и на JS в Salesforce интеграторе "МастерДата".
 Высшее образование: Московский Авиационный Институт (МАИ). 2005 - 2011 гг.
 
 ------
+
+<div style="page-break-after: always;"></div>
+
 **Random facts**
 
 - 12 лет музыкальной школы. Фортепиано и ударные инструменты. Люблю поиграть и пописать музыку.
+
 - Полтора года поддерживал j2me (Java 1.2) приложение и разрабатывал на его основе приложение-обертку под девайс Nokia Asha.
+
 - Возбуждаюсь от NeoVim, Arch Linux, Hyprlane.
+
 - Был домашний питомец -- попугай Ара (огромный такой).
+
 - Есть рабочий телефон Jolla на Sailfish OS от финской компании. Два Blackberry. Два Samsung Fold.
+
 - Женат, дочка 1 год:) На свадьбу написал мобильное приложение, с 2015 года лежит в открытом репозитории, но код лучше не смотреть.
+
 - Cертификат MBA от PwC 2022 года.
+
 - Сертификат Domain Driven Design от Luxsoft 2019 года.
