@@ -35,8 +35,8 @@
 
       const title = computed(() => {
         return language.value === 'en' 
-          ? "<h2>Arsentii Karpov</h2><p>Android developer/Fullstack/Teamlead"
-          : "<h2>Арсентий Карпов</h2><p>Android developer/Fullstack/Teamlead";
+          ? '<h2>Arsentii Karpov <i class="fas fa-battery-full"></i></h2><p>Android developer/Fullstack/Teamlead'
+          : '<h2>Арсентий Карпов <i class="fas fa-battery-full"></i></h2><p>Android developer/Fullstack/Teamlead';
       });
 
       const dPdf = computed(() => {

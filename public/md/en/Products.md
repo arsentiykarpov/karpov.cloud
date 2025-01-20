@@ -6,15 +6,15 @@
 
 >> 2016 I became the "executing" Android Teamlead.
 <br><br><br>
-> **Contactless Visa payWave service in Qiwi Wallet**
+> **Contactless Visa payWave service in Qiwi Wallet** <i class="fa-solid fa-skull-crossbones"></i>
 
 >> Developed and launched contactless payment system Visa payWave with the help of Host Card Emulation technology without using Visa SDK. Implemeted the protocol [smartphone] <----> [POS terminal] from scratch. In the application one could issue tokenized card and pay with an NFC equipped phone via POS terminal. It was the first solution on Russian market those days.
 <br><br><br>
-> **Sovest. Loyalty/credit card.**
+> **Sovest. Loyalty/credit card.** <i class="fa-solid fa-skull-crossbones"></i>
 
 >> Developed the first version of Sovest loyalty card app which later split of into a new branch with its own development team.
 <br><br><br>
-> **Qiwi Investor**
+> **Qiwi Investor** <i class="fa-solid fa-skull-crossbones"></i>
 
 >> Launched the first version of Qiwi Investor crossplatform app with the use of J2Ob crossplatform library.
 <br><br><br>
@@ -30,7 +30,7 @@
 
 >> Crossplatform Android/Ios SDK's [Kotlin Multiplatform](https://www.jetbrains.com/kotlin>>multiplatform/).
 <br><br><br>
-> **CBDC (Central Bank Digital Currency)**
+> **CBDC (Central Bank Digital Currency)** <i class="fa-solid fa-skull-crossbones"></i>
 
 >> Developed the first verstion of Russian CBDC (Digital Currency) project in Qiwi Wallet with the use of [Kotlin Multiplatform](https://www.jetbrains.com/kotlin>>multiplatform/).
 
