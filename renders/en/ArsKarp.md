@@ -1,12 +1,12 @@
 <style>
 a {
-  color: #48C9B0; /* Link color */
-  text-decoration: none; /* Remove underline */
+  color: #48C9B0; 
+  text-decoration: none;
   font-family: "FiraCode";
 }
 
 a:hover {
-  color: #F5B041; /* Change color on hover */
+  color: #F5B041; 
 }
 body {
   max-height:1024px;
@@ -16,86 +16,96 @@ body {
 ![](arsres.jpg)
 # Arsentii Karpov (12.08.1988)
 ### Android Developer / Fullstack Developer / Teamlead
-
 web: [karpov.cloud](https://karpov.cloud)<br>
 telegram: [@arsengizer](https://t.me/arsengizer)
-
+email: [arsentiy.karpov@gmail.com](mailto:arsentiy.karpov@gmail.com)
 <div style="page-break-after: always;"></div>
-How an **Android developer** went from [Loaders and AsyncTask ](https://developer.android.com/reference/android/os/AsyncTask) to [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), through all versions of [RxJava](https ://github.com/ReactiveX/RxJava). <br><br><br>
-**I can**
+As an **Android Developer** I've gone from  [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) to [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), through all versions of [RxJava](https://github.com/ReactiveX/RxJava).
+<br><br><br>
+**Able to**
 
-- Launch quickly, on the fly, with a deadline of "yesterday" for millions of users.
+- Run fast, on the fly with a yesterday deadline on millions of users.
 
-- Launch slowly, thoughtfully.
+- Run it slowly, thoughtfully.
 
-- With A/B tests and [trunk based development](https ://trunkbaseddevelopment.com/).
+- With A/B tests and [trunk based development](https://trunkbaseddevelopment.com/).
 
 - With post-release monitoring and the ability to quickly rollback/switch product features.
 
-**Approximately sometimes**
 
-- I'm figuring out when it makes sense to drag RxJava, Kotlin Multiplatform, Dagger and other bells and whistles into the project - modern powerful technologies, and when one WebView with a couple of hacks is enough to launch a product.
+**Approximately precisely**
 
-**I understand and forgive**
+-Realise when it makes sense to bring RxJava, Kotlin Multiplatform, Dagger and other "modern" power technologies into a project or if WebView with a couple of hacks is enough to launch a product.
 
-- When you need a farm of devices on Kubernetes with a complex CI/CD scheme.
-- When one intern and a small script in the repository are enough as CI/CD.
 
-The last couple of years have been of interest to about **DevOps** topics with his **Kubernetes, Argo CD, Tekton piplines, GrafanaKibana etc.**. Raised a farm of devices on Kubernetes in Qiwi. Tekton piplines via ArgoCD (Ansible).
+**Understand and forgive**
 
-**Responsible for a large fintech product** it is necessary remember about application security. We have been moving side by side with **Application Security** for a long time. **Developed CTF [Capture The Flag]** for the conference [Qiwi Android Developer Days](https://www.youtube.com/watch? v=NvSvRdzu6H4).
+- When a Device farm on Kubernetes with a complex scheme of CI/CD is needed.
 
+- When one intern and one small script in repository as CI/CD are enough.
+
+Apart from Android development for the past few years i have been into DevOps trend with its **Kubernetes, Tekton pipelines, Argo CD, Grafana/Kibana** and so on.
+Configure and deliver Device Farm on Kubernetes in Qiwi.
+Run Tekton pipelines with a help of ArgoCD and Ansible.
+
+**Being in charge of a Big fintech product one has to deal with Application Security**
+
+- I have been working closely with the AppSec department all the way through.
+
+- I have developed Capture The Flag challenge for the [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4) meetup.
+- Know what how to work with Frida on Android and Ghidra on Ios.
 ------
 
 **Qiwi Wallet**
-[Still in the store](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
+[yet in store but in different role](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US)
 
-- In March 2013 year joined the Qiwi Android development team as the second member, where he began developing the first versions of Qiwi Wallet.
+- March 2013 I joined Android Development team as the second participant where i started to create the first versions of Qiwi Wallet.
 
-- Since 2016, he became the "playing" team leader of the Qiwi Android team.
+- 2016 i became the "executing" Android Teamlead.
 
-**Contactless payment service Visa payWave**
 
-- Implemented the contactless payment functionality of Visa PayWave inside Qiwi Wallet using Host Card Emulation technology without using Visa SDK, from 0 implemented the [phone] <---> [POS terminal] protocol. In the application, it was possible to issue a tokenized card and pay with a phone via NFC through a POS terminal. The first solution on the Russian market that moment.
+**Contactless Visa payWave service in Qiwi Wallet**
 
+- Developed and launched contactless payment system Visa payWave with the help of Host Card Emulation technology without using Visa SDK. Implemeted the protocol [smartphone] <---> [POS terminal] from scratch. In the application one could issue tokenized card and pay with an NFC equipped phone via POS terminal. It was the first solution on Russian market those days.
 <div style="page-break-after: always;"></div>
+**Sovest. Loyalty/credit card.**
 
-**Conscience. Installment card.**
+- Developed the first version of Sovest loyalty card app which later split of into a new branch with its own development team.
 
-- Developed the first version of the installment card application Conscience.
-- Then Conscience separated into a new JSC with its own development group.
 
 **Qiwi Investor**
 
-- Developed the first version of the cross-platform application for investments Qiwi Investor. As a cross-platform library, we used [J2ObjC ](https://github.com/google/j2objc).
+- Launched the first version of Qiwi Investor crossplatform app with the use of J2Ob crossplatform library.
 
-**Device Farm**
 
-- Integrated the device farm into the CI/CD processes. What he talked about at the conference [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI)
+**Device farm**
 
-**Qiwi Support Chat Platform**
+- Adapted Device Farm for CI/CD processes what i presented the full process on the [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI) meetup.
 
-- SDK only client (no UI)
-- SDK with UI
-- Cross-platform versions of all Android/Ios SDKs [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/)
 
-**Digital Ruble**
+**Qiwi Support chat**
 
-- Developed the first version of the cross-platform Digital Ruble project.
-- Cross-platform library [Kotlin Multiplatform](https ://www.jetbrains.com/kotlin-multiplatform/)
+- SDK without UI.
 
-Before Qiwi (until 2013) developed in C++ at GosNIIAS and in JS at the Salesforce integrator "MasterData".
-Higher education: Moscow Aviation Institute (MAI). 2005 - 2011
+- SDK with UI.
 
+- Crossplatform Android/Ios SDK's [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/).
+
+
+**CBDC (Central Bank Digital Currency)**
+
+- Developed the first verstion of Russian CBDC (Digital Currency) project in Qiwi Wallet with the use of [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/).
+
+
+Before Qiwi (until 2013) used to develop on C++ in GosNIIAs (State Research Institute of Aviation Systems) and on JavaScript in Salesforce integrator "Masterdata"
 ------
-
 **Random facts**
 
-- 12 years of music school. Piano and percussion instruments. I like to play and write music.
-- For a year and a half I supported the j2me (Java 1.2) application and developed an application based on it - wrapper for Nokia Asha device.
-- I get excited by NeoVim, Arch Linux, Hyprlane.
-- I had a pet - a macaw (a huge one).
-- I have a working Jolla phone on Sailfish OS from a Finnish company. Two Blackberries. Two Samsung Folds.
-- Married, 1 year old daughter :) Wrote a mobile app for the wedding, it has been in the open repository since 2015, but it is better not to look at the code.
-- MBA certificate from PwC 2022.
-- Domain Driven Design certificate from Luxsoft 2019.
+- Twelve years of music school in piano and percussions instruments. Love to play and write music.
+- 1.5 year of J2me (Java 1.2) app support and development of app-wrapper for Nokia Asha device based on it.
+- Addicted to NeoVim, Arch linux with Hyprlane.
+- Had a big macaw bird as a pet.
+- Possess a working Jolla Sailfish OS based smartphone. Two Blackberry. Two Samsung Fold.
+- Married, raising one year-old daughter. Made the wedding app which is stored in an open repository since 2015 (but the code is better not to be revisioned:)).
+- Got a PwC issued MBA certificate back in 2022.
+- Gained Domain Driven Design certificate of Luxsoft.

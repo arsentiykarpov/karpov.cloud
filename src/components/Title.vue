@@ -11,7 +11,7 @@
       <div style="display: flex; justify-content: flex-end; padding-right: 28px;">
       <a :href="pdfLink" 
         style="display: block;
-        color:#48C9B0;
+        color:#48c774;
         font-family: FiraCode-Bold;
         font-size: 18px; 
         margin: 0px 0px 0px 0px;

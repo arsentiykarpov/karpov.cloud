@@ -14,13 +14,11 @@ body {
 }
 </style>
 ![](arsres.jpg)
-
 # Арсентий Карпов (12.08.1988)
 ### Android Developer / Fullstack Developer / Teamlead
-
 web: [karpov.cloud](https://karpov.cloud)<br>
 telegram: [@arsengizer](https://t.me/arsengizer)
-
+email: [arsentiy.karpov@gmail.com](mailto:arsentiy.karpov@gmail.com)
 <div style="page-break-after: always;"></div>
 Как **Android разработчик** прошел путь от [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) до [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), через все версии [RxJava](https://github.com/ReactiveX/RxJava).
 <br><br><br>
@@ -34,20 +32,28 @@ telegram: [@arsengizer](https://t.me/arsengizer)
 
 - С пост-релизным мониторингом и возможностью быстрого отката/переключения фичей продукта.
 
+
 **Примерно точно иногда**
 
 - Прикидываю, когда имеет смысл тащить в проект RxJava, Kotlin Multiplatform, Dagger и прочие -свистоперделки- современные мощные технологии, а когда для запуска продукта достаточно одного WebView с парой хаков.
 
+
 **Понимаю и прощаю**
 
 - Когда нужна ферма устройств на Kubernetes со сложной схемой CI/CD.
-- Когда достаточно одного стажера и небольшого скрипта в репозитории в качества CI/CD.
+- Когда достаточно одного стажера и небольшого скрипта в репозитории в качестве CI/CD.
 
+Последние пару лет интересуют около **DevOps** темы c его **Kubernetes, Argo CD, Tekton piplines, Grafana/Kibana etc.**. 
+Поднял в Qiwi ферму устройств на Kubernetes. 
+Tekton piplines через ArgoCD + Ansible.
 
-Последние пару лет интересуют около **DevOps** темы c его **Kubernetes, Argo CD, Tekton piplines, ГрафанаКибана etc.**. Поднял в Qiwi ферму устройств на Kubernetes. Tekton piplines через ArgoCD (Ansible).
+**Отвечая за крупный финтех продукт необходимо помнить о безопасности приложения.**
 
-**Отвечая за крупный финтех продукт** необходимо помнить о безопасности приложения. С **Application Security** долго движемся бок о бок. **Разработал CTF [Capture The Flag]** для конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4).
+- С **Application Security** долго движемся бок о бок. 
 
+- Разработал CTF [Capture The Flag] челлендж для конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4).
+
+- Знаю как работать с Frida на Android и Ghidra на Ios. 
 ------
 
 **Qiwi Кошелек**
@@ -60,13 +66,13 @@ telegram: [@arsengizer](https://t.me/arsengizer)
 **Сервис бесконтактной оплаты Visa payWave**
 
 - Реализовал внутри Qiwi Кошелька функционал бесконтактной оплаты Visa PayWave при помощи технологии Host Card Emulation без использования Visa SDK, с 0 реализовал протокол [телефон] <---> [POS терминал].  В приложении можно было выпускать токенизированную карту и платить телефоном по  NFC через POS терминал. Первое решение на Российском рынке на тот момент.
-
 <div style="page-break-after: always;"></div>
-
 **Совесть. Карта рассрочки.**
 
 - Разработал первую версию приложения карты рассрочки Совесть.
+
 - Далее Совесть отделилась в новое АО со своей группой разработки.
+
 
 **Qiwi Инвестор**
 
@@ -92,7 +98,6 @@ telegram: [@arsengizer](https://t.me/arsengizer)
 Высшее образование: Московский Авиационный Институт (МАИ). 2005 - 2011 гг.
 
 ------
-
 **Random facts**
 
 - 12 лет музыкальной школы. Фортепиано и ударные инструменты. Люблю поиграть и пописать музыку.
