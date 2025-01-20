@@ -4,7 +4,7 @@
   <b-card-text>
 		{{ randomFact }}
   </b-card-text>
-  <b-button @click="generate" variant="outline-info">ещё</b-button>
+  <b-button @click="generate" variant="outline-info">{{moreText}}</b-button>
 	</b-card>
 	</div>
 </template>
@@ -27,14 +27,14 @@ export default {
   ];
 
   const factsEn = [
-    "12 years of music school. Piano and percussion instruments. I like to play and write music.",
-    "I supported the j2me (Java 1.2) application for a year and a half and developed a wrapper application for the Nokia Asha device based on it",
-    "I get excited by NeoVim, Arch Linux, Hyprlane.",
-    "I had a pet - a macaw parrot (a huge one)",
-    "I have a work phone Jolla on Sailfish OS from a Finnish company. Two Blackberries. Two Samsung Folds.",
-    "Married, 1 year old daughter :) I wrote a mobile application for the wedding, it has been in an open repository since 2015, but it is better not to look at the code.",
-    "MBA certificate from PwC 2022.",
-    "Domain Driven Design certificate from Luxsoft 2019." ];
+    "Twelve years of music school in piano and percussions instruments. Love to play and write music.",
+    "1.5 year of J2me (Java 1.2) app support and development of app-wrapper for Nokia Asha device based on it.",
+    "Addicted to NeoVim, Arch Linux, Hyprlane.",
+    "Had a big macaw bird as a pet",
+    "I have a work phone Jolla on Sailfish OS from a Finnish company. Two Blackberrie. Two Samsung Fold.",
+    "Married, raising one year-old daughter. Made the wedding app which is stored in an open repository since 2015 (but the code is better not to be revisioned:)).",
+    "Got a PwC issued MBA certificate back in 2022.",
+    "Gained Domain Driven Design certificate of Luxsoft 2019." ];
 
     const language = inject('language');
 
@@ -45,8 +45,14 @@ export default {
         generate();
       }
     );
+  
+    const moreText = computed(()=>{
+        return language.value === 'en' 
+        ? "more"
+        : "ещё"
+    });
 
-		var usedIndeces = new Set()
+    var usedIndeces = new Set()
 		const randomFact = ref("")
     const generate = () => {
       if (language.value === 'en') {
@@ -81,7 +87,8 @@ export default {
 
 		return {
 			randomFact,
-      generate
+      generate,
+      moreText,
 		} 
 	},
 	mounted() {

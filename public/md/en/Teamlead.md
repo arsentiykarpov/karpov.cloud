@@ -1,14 +1,19 @@
-> **CAN**
->> Launch fast, on your knees, with a deadline of 'yesterday' for millions of users. 
+> **Able to**
 
->> Launch slowly, thoughtfully.
+>> Run fast, on the fly with a yesterday deadline on millions of users.
 
->> With A/B tests and [trunk based development](https://trunkbaseddevelopment.com/). 
+>> Run it slowly, thoughtfully.
+
+>> With A/B tests and [trunk based development](https://trunkbaseddevelopment.com/).
 
 >> With post-release monitoring and the ability to quickly rollback/switch product features.
+<br><br><br>
+> **Approximately precisely**
 
-> **Sometimes** 
->> I figure out when it makes sense to drag RxJava, Kotlin Multiplatform, Dagger and other ~~whistleblowers~~~ modern powerful technologies into a project, and when a single WebView with a couple of hacks is enough to launch a product. 
+>> Realise when it makes sense to bring RxJava, Kotlin Multiplatform, Dagger and other "modern" power technologies into a project or if WebView with a couple of hacks is enough to launch a product.
+<br><br><br>
+> **Understand and forgive**
 
-> **I understand and forgive**
->> When you need a farm of devices on Kubernetes with a complex CI/CD scheme, and when a single intern and a small script in the repository as a CI/CD is enough.
+>> When a Device farm on Kubernetes with a complex scheme of CI/CD is needed.
+
+>> When one intern and one small script in repository as CI/CD are enough.

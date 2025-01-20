@@ -1,5 +1,12 @@
-> As an **Android developer** went from [Loaders and AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) to [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), through all versions of RxJava.
+> As an **Android Developer** I've gone from  [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) to [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), through all versions of [RxJava](https://github.com/ReactiveX/RxJava).
+<br><br><br>
+> **Being in charge of a Big fintech product one has to deal with Application Security**
+>> I have been working closely with the AppSec department all the way through.
 
-> Last couple years interested in about **DevOps** topics with its **Kubernetes, Argo CD, Tekton piplines, GrafanaKibana etc.**. Raised a farm of devices in Kiwi on Kubernetes. Tekton piplines via ArgoCD (Ansible).
+>> I have developed Capture The Flag challenge for the [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4) meetup.
+> Know how to work with Frida on Android and Ghidra on Ios.
+<br><br><br>
+> Apart from Android development for the past few years i have been into DevOps trend with its **Kubernetes, Tekton pipelines, Argo CD, Grafana/Kibana** and so on
+>> Configure and deliver Device Farm on Kubernetes in Qiwi.
 
-> **When in charge of a large fintech product** you need to keep application security in mind. With **Application Security** moving side by side for a long time. **Designed the [Capture The Flag]** CTF for the [Qiwi Android Developer Days] conference(https://www.youtube.com/watch?v=NvSvRdzu6H4). Best regards to the InfoSec Qiwi team!
+>> Run Tekton pipelines with a help of ArgoCD and Ansible.
