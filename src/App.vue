@@ -1,12 +1,6 @@
 <template>
   <div>
     <Title/> 
-    <div class="language-switcher" style="display: flex; justify-content: flex-start; padding-left: 20px;">
-      <a href="#" :class="{ active: language === 'ru' }" @click="switchLanguage('ru')">RU</a>/
-      <a href="#" :class="{ active: language === 'en' }" @click="switchLanguage('en')">EN</a>
- 
-    </div>
-
     <b-carousel
       id="carousel-1"
       :interval="0"
@@ -18,7 +12,7 @@
       style="margin: 20px; text-shadow: 1px 1px 2px #333;margin-top: 0px;"
     >
       <b-carousel-slide img-src="./bg/bath_cropped.jpg" img-width="1024" img-height="480">
-        <Products :mdContentPath="getPath('Products')" />	App
+        <Products :mdContentPath="getPath('Products')" />	
       </b-carousel-slide>
       
       <b-carousel-slide img-src="./bg/bath_cropped.jpg">
@@ -28,10 +22,30 @@
       <b-carousel-slide img-src="./bg/bath_cropped.jpg">
         <Products :mdContentPath="getPath('Techlead')" />	
       </b-carousel-slide>
-      <b-carousel-slide img-src="./bg/ihouse_cropped.jpg">
-        <Products :mdContentPath="getPath('Contacts')" />	
-      </b-carousel-slide>
 		</b-carousel>
+
+    <div class="contact-block" style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; margin-top: 0px; padding-left: 30px; border-radius: 12px; background-color: #f9f9f9; border: 1px solid #ddd;">
+      <div class="contact-info">
+        <p style="font-size: 1.1em;"><strong>Telegram:</strong> <a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
+        <p style="font-size: 1.1em;"><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>
+        <p style="font-size: 1.1em;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859" style="color: #2d8f2d;">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
+      </div>
+
+      <div class="qr-pair" style="display: flex; gap: 20px;padding-right: 30px;">
+        <div style="text-align: center;">
+          <img src="telegram_qr.png" alt="Telegram QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
+          <div>Telegram</div>
+        </div>
+        <div style="text-align: center;">
+          <img src="email_qr.png" alt="Email QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
+          <div> Email</div>
+        </div>
+        <div style="text-align: center;">
+          <img src="linkedin_qr.png" alt="LinkedIn QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
+          <div>LinkedIn</div>
+        </div>
+      </div>
+    </div>
     <RandomFact />
   </div>
 </template>
@@ -51,9 +65,6 @@ export default {
   },
   setup() {
     const language = ref('en');
-    const switchLanguage = (lang) => {
-      language.value = lang;
-    }
     const getPath = (fileName) => {
       return `./md/${language.value}/${fileName}.md`;
     }
@@ -62,7 +73,6 @@ export default {
 
     return {
       language,
-      switchLanguage,
       getPath,
     };
   },
@@ -79,16 +89,22 @@ export default {
 }
 
 >>>.carousel-caption {
-  height: 90%; 
+  height: 85%; 
 	overflow: hidden;
   color: white; 
   border-radius: 10px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 40px;
 	top: 0px;
 	bottom: 0px;
 	left: 5%;
 	right: 5%;
+  text-align: left;
+  font-family: FiraCode;
+}
+
+>>>.carousel-caption h5 {
+  font-family:FiraCode-Bold;
 }
 	>>>.carousel-item.active {
 		position: relative;
@@ -100,11 +116,19 @@ export default {
 		max-height: 70vh;/*why relative parent height not working??? so duplicate Viewport height of parent, kind of hack?*/
 	}
 
+  >>>.carousel-item img {
+    opacity: 0.5;
+  }
+
 	>>>.carousel-inner {
 		position: relative;
 		overflow: hidden;
 		max-height: 70vh;
 	}
+ 
+  >>>.carousel-indicators {
+    margin-top: 20px;
+  }
 /*
 @media (max-width: 200px) {
 	>>>.carousel-caption {
@@ -121,14 +145,31 @@ a {
 a:hover {
   color: #F5B041; /* Change color on hover */
 }
-
+    .contact-info {
+      flex: 1;
+    }
+    .contact-info strong {
+      font-family: FiraCode;
+      font-size: 14px;
+    }
+    .qr-codes {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: FiraCode;
+      font-size: 12px;
+    }
+.qr-pair div div {
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+}
 </style>
 
 <style>
 /* General styling */
 strong {
   font-family: 'FiraCode-Bold';
-  font-size: 15px;
+  font-size: 16px;
 }
 
 blockquote {

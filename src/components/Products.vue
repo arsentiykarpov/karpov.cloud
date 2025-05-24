@@ -53,19 +53,21 @@ export default {
 .md-content-conatiner {
 	height: 100%;
   backdrop-filter: blur(5px); /* Applies a blur effect */
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
   -webkit-backdrop-filter: blur(5px); /* Safari support */
   border-radius: 6px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
   color: #fff; /* Text color for readability */
   overflow: hidden; /* Disable horizontal scrolling */
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 /* The scrollable container */
 .scrollable-container {
 	height: 100%;
 	margin: 20px;
   padding-right: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   overflow-y: auto; 
   overflow-x: hidden; /* Disable horizontal scrolling */
 }

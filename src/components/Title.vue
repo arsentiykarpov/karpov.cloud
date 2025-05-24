@@ -3,7 +3,7 @@
     <strong style="display: block;
         font-family: FiraCode;
         font-size: 24px; 
-        margin: 20px 0px 0px 20px;
+        margin: 0px 0px 0px 0px;
         text-align:left;
         white-space: nowrap;"
         v-html="title">
@@ -11,10 +11,20 @@
       <div class="cv-lang-wrapper" target="_blank">
         <a class="cv-button" :href="pdfLink">{{dPdf}}</a>
        <div class="lang-toggle">
-          <button :class="{ active: language.value === 'en' }" @click="toggleLang('en')">EN</button>
-          <span>|</span>
-          <button :class="{ active: language.value === 'ru' }" @click="toggleLang('ru')">RU</button>
-        </div>
+  <button
+    :class="{ active: language.value === 'en' }"
+    @click="toggleLang('en')"
+  >
+    🇬🇧
+  </button>
+  <span>|</span>
+  <button
+    :class="{ active: language.value === 'ru' }"
+    @click="toggleLang('ru')"
+  >
+    🇷🇺
+  </button>
+</div>
       </div>
   </div>
 </template>
@@ -34,7 +44,7 @@
       const title = computed(() => {
         return language.value === 'en' 
           ? `<section class="intro">
-  <h1>Arsentii Karpov <i class="fa-solid fa-code"></i></h1>
+  <h1>Arsentii Karpov <i class="fas fa-battery-full"></i></h1>
   <h2 class="roles">
     Android Developer <i class="fa-brands fa-android"></i>
     &nbsp;|&nbsp; Fullstack <i class="fa-solid fa-layer-group"></i>
@@ -42,9 +52,9 @@
   </h2>
 </section>`
           : `<section class="intro">
-  <h1>Арсентий Карпов <i class="fa-solid fa-code"></i></h1>
+  <h1>Арсентий Карпов<i class="fas fa-battery-full"></i></h1>
   <h2 class="roles">
-    Android Developer <i class="fa-brands fa-android"></i>
+    Android Разработчик <i class="fa-brands fa-android"></i>
     &nbsp;|&nbsp; Fullstack <i class="fa-solid fa-layer-group"></i>
     &nbsp;|&nbsp; Teamlead <i class="fa-solid fa-users-gear"></i>
   </h2>
@@ -54,7 +64,7 @@
       const dPdf = computed(() => {
         return language.value === 'en' 
         ? "[*.pdf] Download CV"
-        : "[*.pdf]";
+        : "[*.pdf] Скачать Резюме";
       });
 
       const toggleLang = (lang) => {
@@ -100,6 +110,7 @@
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -121,11 +132,10 @@
 .lang-toggle button {
   background: none;
   border: none;
-  font-weight: bold;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.25em 0.5em;
-  color: #444;
+  color: #333;
 }
 
 .lang-toggle button.active {

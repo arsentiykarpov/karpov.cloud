@@ -1,12 +1,27 @@
-> As an **Android Developer** I've gone from  [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) to [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), through all versions of [RxJava](https://github.com/ReactiveX/RxJava).
-<br><br><br>
-> **Being in charge of a Big fintech product one has to deal with Application Security**
->> I have been working closely with the AppSec department all the way through.
+#### 🚀 Beyond Android — Security & DevOps Experience
+---
+##### 📱 Android Evolution
 
->> I have developed Capture The Flag challenge for the [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4) meetup.
-> Know how to work with Frida on Android and Ghidra on Ios.
-<br><br><br>
-> Apart from Android development for the past few years i have been into DevOps trend with its **Kubernetes, Tekton pipelines, Argo CD, Grafana/Kibana** and so on
->> Configure and deliver Device Farm on Kubernetes in Qiwi.
+As an **Android Developer**, I’ve gone from working with [**Loaders and AsyncTask**](https://developer.android.com/reference/android/os/AsyncTask) to [**RxJava**](https://github.com/ReactiveX/RxJava) (all major versions) and now actively use [**Kotlin Multiplatform**](https://www.jetbrains.com/kotlin-multiplatform/).
 
->> Run Tekton pipelines with a help of ArgoCD and Ansible.
+---
+
+##### 🔐 Application Security
+
+Leading a large fintech product means thinking about security every day.  
+I’ve worked closely with our **AppSec team** throughout the development process.
+
+- Created a custom **Capture The Flag** challenge for [**Qiwi Android Developer Days**](https://www.youtube.com/watch?v=NvSvRdzu6H4).
+- Hands-on experience with **Frida** (Android) and **Ghidra** (iOS) for reverse engineering and app security.
+
+---
+
+##### ⚙️ DevOps & Infrastructure
+
+In recent years, I’ve also worked on the DevOps side of mobile delivery:
+
+- Set up and delivered a **Device Farm on Kubernetes** for automated testing.
+- Managed CI/CD using **Tekton Pipelines**, **Argo CD**, and **Ansible**.
+- Worked with observability tools like **Grafana** and **Kibana**.
+
+
