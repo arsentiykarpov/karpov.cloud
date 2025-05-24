@@ -1,7 +1,7 @@
 <template>
   <div>
     <Title/> 
-    <div class="language-switcher" style="display: flex; justify-content: flex-end; padding-right: 28px;">
+    <div class="language-switcher" style="display: flex; justify-content: flex-start; padding-left: 20px;">
       <a href="#" :class="{ active: language === 'ru' }" @click="switchLanguage('ru')">RU</a>/
       <a href="#" :class="{ active: language === 'en' }" @click="switchLanguage('en')">EN</a>
  
