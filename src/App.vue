@@ -3,7 +3,7 @@
     <Title/> 
     <b-carousel
       id="carousel-1"
-      :interval="0"
+      :interval="5000"
       indicators
       controls
 			fade
@@ -11,20 +11,20 @@
       class="responsive-carousel"
       style="margin: 20px; text-shadow: 1px 1px 2px #333;margin-top: 0px;"
     >
-      <b-carousel-slide img-src="./bg/bath_cropped.jpg" img-width="1024" img-height="480">
+      <b-carousel-slide img-src="./bg/drums_cropped.jpg" img-width="1024" img-height="480">
         <Products :mdContentPath="getPath('Products')" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="./bg/bath_cropped.jpg">
+      <b-carousel-slide img-src="./bg/drums_cropped.jpg">
         <Products :mdContentPath="getPath('Teamlead')" />	
       </b-carousel-slide>
       
-      <b-carousel-slide img-src="./bg/bath_cropped.jpg">
+      <b-carousel-slide img-src="./bg/drums_cropped.jpg">
         <Products :mdContentPath="getPath('Techlead')" />	
       </b-carousel-slide>
 		</b-carousel>
 
-    <div class="contact-block" style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; margin-top: 0px; padding-left: 30px; border-radius: 12px; background-color: #f9f9f9; border: 1px solid #ddd;">
+    <div class="contact-block" style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; margin-top: 0px; padding-left: 30px;padding-top: 20px; margin-left: 20px; margin-right:20px; border-radius: 12px; background-color: #f9f9f9; border: 1px solid #ddd;">
       <div class="contact-info">
         <p style="font-size: 1.1em;"><strong>Telegram:</strong> <a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
         <p style="font-size: 1.1em;"><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>

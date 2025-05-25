@@ -85,7 +85,7 @@
 <style>
 .intro {
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .intro h1 {
@@ -126,6 +126,7 @@
 }
 
 .cv-button:hover {
+  color: white;
   background-color: #1b5e20;
 }
 

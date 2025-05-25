@@ -53,7 +53,7 @@ export default {
 .md-content-conatiner {
 	height: 100%;
   backdrop-filter: blur(5px); /* Applies a blur effect */
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
   -webkit-backdrop-filter: blur(5px); /* Safari support */
   border-radius: 6px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
@@ -73,12 +73,16 @@ export default {
 }
 
 /* Links styling */
-blockquote a {
-  color: #48c774; /* Link color */
+blockquote a,
+p a,
+li a{
+  color: #2e7d32; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 
-blockquote a:hover {
-  color: #F5B041; /* Change color on hover */
+p a:hover,
+blockquote a:hover,
+li a:hover {
+  color: #1b5e20;/* Change color on hover */
 }
 </style>
