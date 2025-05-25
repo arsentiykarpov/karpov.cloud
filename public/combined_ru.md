@@ -62,7 +62,7 @@ body {
     white-space: nowrap;"
 >
 <section class="intro">
-<h1>  Arsentii Karpov <i class="fas fa-battery-full"></i></h1>
+<h1>  Арсентий Карпов <i class="fas fa-battery-full"></i></h1>
 <h2 class="roles">
 Android Developer <i class="fa-brands fa-android"></i>
 &nbsp;|&nbsp; Fullstack <i class="fa-solid fa-layer-group"></i>
@@ -217,3 +217,4 @@ Android Developer <i class="fa-brands fa-android"></i>
 - Реализовал CI/CD процессы с помощью **Tekton Pipelines**, **Argo CD** и **Ansible**.
 - Работал с инструментами мониторинга: **Grafana** и **Kibana**.
 
+<div style="page-break-after: always;"></div>

@@ -62,7 +62,7 @@ body {
     white-space: nowrap;"
 >
 <section class="intro">
-<h1>  Арсентий Карпов <i class="fas fa-battery-full"></i></h1>
+<h1>  Arsentii Karpov <i class="fas fa-battery-full"></i></h1>
 <h2 class="roles">
 Android Developer <i class="fa-brands fa-android"></i>
 &nbsp;|&nbsp; Fullstack <i class="fa-solid fa-layer-group"></i>
@@ -193,7 +193,7 @@ Master's degree in Information Technology (2005 → 2011)
 - At the same time, I appreciate when a **small script and one intern** can solve the problem more effectively.
 
 <div style="page-break-after: always;"></div>
-#### 🚀 Android ⇒ ⇒ Security & DevOps Experience
+#### 🚀 Android ⇒ Security & DevOps Experience
 
 
 
