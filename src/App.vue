@@ -3,8 +3,9 @@
     <Title/> 
     <b-carousel
       id="carousel-1"
-      :interval="5000"
+      :interval="15000"
       indicators
+      :no-hover-pause="false"
       controls
 			fade
       background="#ababab"
