@@ -3,7 +3,7 @@
     <Title/> 
     <b-carousel
       id="carousel-1"
-      :interval="15000"
+      :interval="50000"
       indicators
       :no-hover-pause="false"
       controls
