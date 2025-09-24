@@ -93,133 +93,124 @@ Android Developer <i class="fa-brands fa-android"></i>
 </div>
 <div style="page-break-after: always;"></div>
 <img src="qiwi.png" height="20px"/>**iwi Wallet**.(2013-->2024)
-*Android Developer → Android Team Lead*
+*Android Developer-->Android Team Lead*
 
 **Status:** App [still available in store](https://play.google.com/store/apps/details?id=ru.mw&hl=en-US) despite government license revocation in 2024
 
-**Currently open to new opportunities**
+######  Android Evolution
 
-##### Key Contributions
-
-- Joined Qiwi in March 2013 as the **second Android developer**
-- Helped build and launch the **first production versions** of Qiwi Wallet
-- Promoted to **Android Team Lead** in 2016
+As an Android Developer, I’ve gone from working with Loaders and AsyncTask to RxJava (all major versions) and now use Kotlin Multiplatform
 
 
+###### Key Contributions
 
-##### 🚀 Visa payWave (Contactless Payments)
-
-- Launched **Visa payWave** integration via **Host Card Emulation (HCE)**  
-- Developed the full [smartphone] ⟷ [POS terminal] protocol **from scratch**
-- Enabled in-app issuance of tokenized cards for **NFC payments**
-- One of the **first solutions on the Russian market**
+- Joined Qiwi in March 2013 as the second Android developer
+- Helped build and launch the first production versions of Qiwi Wallet
+- Promoted to Android Team Lead in 2016
 
 
 
-##### 💳 Sovest (Loyalty / Credit Card)
+######  Visa payWave (Contactless Payments)
 
-- Built the first version of the **Sovest app**
+- Launched Visa payWave integration via Host Card Emulation (HCE)  
+- Developed the full [smartphone] ⟷ [POS terminal] protocol from scratch
+- Enabled in-app issuance of tokenized cards for NFC payments
+- One of the first solutions on the Russian market
+
+
+
+######  Sovest (Loyalty / Credit Card)
+
+- Built the first version of the Sovest app
 - Product later spun off into a dedicated team and codebase
 
 
 
-##### 📈 Qiwi Investor
+######  Qiwi Investor
 
-- Developed the initial cross-platform version of **Qiwi Investor**
-- Used **J2ObjC** for shared logic across Android and iOS
-
-
-
-##### 🧪 Device Farm Integration
-
-- Integrated **Device Farm on Kubernetes** into Qiwi’s CI/CD
-- Presented the setup at **Qiwi Android Developer Days**
+- Developed the initial cross-platform version of Qiwi Investor
+- Used J2ObjC for shared logic across Android and iOS
 
 
 
-##### 💬 Support Chat SDKs
+######  Device Farm Integration
+
+- Integrated Device Farm on Kubernetes into Qiwi’s CI/CD
+- Presented the setup at Qiwi Android Developer Days
+
+
+
+######  Support Chat SDKs
 
 - Delivered multiple SDKs:
   - Core SDK (no UI)
   - Full-featured UI SDK
-  - Cross-platform **Kotlin Multiplatform** SDKs for Android & iOS
+  - Cross-platform Kotlin Multiplatform SDKs for Android & iOS
 
 
 
-##### 🪙 CBDC (Central Bank Digital Currency)
+######  CBDC (Central Bank Digital Currency)
 
-- Contributed to the first version of Russia’s **Digital Ruble (CBDC)** within Qiwi Wallet
-- Used **Kotlin Multiplatform** for shared codebase
-
-
-
-##### 👨‍💻 Before Qiwi
-
-- **C++ Developer** at GosNIIAS (State Aviation Institute)
-- **JavaScript Developer** at Masterdata (Salesforce integrator)
+- Contributed to the first version of Russia’s Digital Ruble (CBDC) within Qiwi Wallet
+- Used Kotlin Multiplatform for shared codebase
 
 
 
-##### 🎓 Education
+######  Before Qiwi
 
-**Moscow Aviation Institute**  
+- C++ Developer at GosNIIAS (State Aviation Institute)
+- JavaScript Developer at Masterdata (Salesforce integrator)
+
+
+
+######  Education
+
+Moscow Aviation Institute  
 Master's degree in Information Technology (2005 → 2011)
 
 <div style="page-break-after: always;"></div>
-#### 🧠 My Engineering Approach
+#####  My Engineering Approach
 
-
-
-##### ✅ Able to adapt to the pace
+######  Able to adapt to the pace
 
 - Comfortable working under tight deadlines, even on high-load apps with millions of users.  
-- Equally confident in taking a slower, more thoughtful approach when code quality and long-term stability matter.  
-- Experienced with **A/B testing**, [**trunk-based development**](https://trunkbaseddevelopment.com/), and release monitoring.  
-- Know how to quickly **roll back or switch off features** after release if needed.
+- Equally confident in taking a slower, more thoughtful approach when code quality and long-term stability matter
+- Experienced with A/B testing, [trunk-based development](https://trunkbaseddevelopment.com/), and release monitoring
+- Know how to quickly roll back or switch off features after release if needed
 
 
 
-##### 🎯 Choosing tools with purpose
+######  Choosing tools with purpose
 
-- I bring in advanced tools like **RxJava**, **Kotlin Multiplatform**, or **Dagger** when the project benefits from them.  
-- But I also know when a **simple WebView with some tweaks** is enough to test and launch fast.  
-- I aim to use the **right tool for the job**, not the most complex one.
-
-
-
-##### ⚙️ Understand complexity — and when to avoid it
-
-- I’ve worked with **Kubernetes-based device farms**, **CI/CD pipelines**, and production-grade monitoring tools.  
-- At the same time, I appreciate when a **small script and one intern** can solve the problem more effectively.
-
-<div style="page-break-after: always;"></div>
-#### 🚀 Android ⇒ Security & DevOps Experience
+- I bring in advanced tools like RxJava, Kotlin Multiplatform, or Dagger when the project benefits from them
+- But I also know when a simple WebView with some tweaks is enough to test and launch fast
+- I aim to use the right tool for the job, not the most complex one
 
 
 
-##### 📱 Android Evolution
+######  Understand complexity — and when to avoid it
 
-As an **Android Developer**, I’ve gone from working with [**Loaders and AsyncTask**](https://developer.android.com/reference/android/os/AsyncTask) to [**RxJava**](https://github.com/ReactiveX/RxJava) (all major versions) and now actively use [**Kotlin Multiplatform**](https://www.jetbrains.com/kotlin-multiplatform/).
+- I’ve worked with Kubernetes-based device farms, CI/CD pipelines, and production-grade monitoring tools
+- At the same time, I appreciate when a small script and one intern can solve the problem more effectively
 
-
-
-##### 🔐 Application Security
-
-Leading a large fintech product means thinking about security every day.  
-I’ve worked closely with our **AppSec team** throughout the development process.
-
-- Created a custom **Capture The Flag** challenge for [**Qiwi Android Developer Days**](https://www.youtube.com/watch?v=NvSvRdzu6H4).
-- Hands-on experience with **Frida** (Android) and **Ghidra** (iOS) for reverse engineering and app security.
+#####  Security & DevOps Experience
 
 
+######  Application Security
 
-##### ⚙️ DevOps & Infrastructure
+Leading a large fintech product means thinking about security every day
+I’ve worked closely with our AppSec team throughout the development process
 
-In recent years, I’ve also worked on the DevOps side of mobile delivery:
-
-- Set up and delivered a **Device Farm on Kubernetes** for automated testing.
-- Managed CI/CD using **Tekton Pipelines**, **Argo CD**, and **Ansible**.
-- Worked with observability tools like **Grafana** and **Kibana**.
+- Created a custom Capture The Flag challenge for [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4)
+- Hands-on experience with Frida (Android) and Ghidra (iOS) for reverse engineering and app security
 
 
-<div style="page-break-after: always;"></div>
+
+######  DevOps & Infrastructure
+
+In recent years, I’ve also worked on the DevOps side of mobile:
+
+- Set up and delivered a Device Farm on Kubernetes for automated testing
+- Managed CI/CD using Tekton Pipelines, Argo CD, and Ansible
+- Worked with observability tools like Grafana and Kibana
+

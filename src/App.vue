@@ -6,28 +6,28 @@
       <webcv :mdContentPath="getPath('Teamlead')" />	
       <webcv :mdContentPath="getPath('Techlead')" />	
     </div>
-    <div class="contact-block" >
-      <div class="contact-info">
-        <p><strong>Telegram:</strong> <a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
-        <p><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859" style="color: #2d8f2d;">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
-      </div>
-
-      <div class="qr-pair" style="display: flex; gap: 20px;padding-right: 30px;">
-        <div style="text-align: center;">
-          <img src="telegram_qr.png" alt="Telegram QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
-          <div>Telegram</div>
-        </div>
-        <div style="text-align: center;">
-          <img src="email_qr.png" alt="Email QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
-          <div> Email</div>
-        </div>
-        <div style="text-align: center;">
-          <img src="linkedin_qr.png" alt="LinkedIn QR" width="100" height="100" style="border: 1px solid #ccc; border-radius: 0px;">
-          <div>LinkedIn</div>
-        </div>
-      </div>
+    <div class="contact-block">
+  <div class="contact-info">
+    <p><strong>Telegram:</strong> <a href="https://t.me/arsengizer">@arsengizer</a></p>
+    <p><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com">arsentiy.karpov@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859"
+           title="https://www.linkedin.com/in/arsentiy-karpov-4171a859">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
+  </div>
+  <div class="qr-pair">
+    <div class="qr">
+      <img src="telegram_qr.png" alt="Telegram QR" loading="lazy">
+      <div class="label">Telegram</div>
     </div>
+    <div class="qr">
+      <img src="email_qr.png" alt="Email QR" loading="lazy">
+      <div class="label">Email</div>
+    </div>
+    <div class="qr">
+      <img src="linkedin_qr.png" alt="LinkedIn QR" loading="lazy">
+      <div class="label">LinkedIn</div>
+    </div>
+  </div>
+</div>
     <RandomFact />
   </div>
 </template>
@@ -90,57 +90,49 @@ a:hover {
 }
 
 .contact-block {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr max-content; /* left grows, right fits QR width */
+  gap: 16px 32px;
+  align-items: center;                    /* or: start */
   margin: 20px 20px 0;
-  padding: 20px 30px 20px 30px;
+  padding: 20px 30px;
   border-radius: 12px;
   background: #f9f9f9;
   border: 1px solid #ddd;
 }
 
 /* Left side: labels + links */
-.contact-info {
-  flex: 1 1 360px;   /* can grow & shrink */
-  min-width: 0;      /* <-- required so the link can shrink/ellipsis in flex */
-}
+.contact-info { min-width: 0; }
 
-.contact-info p {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin: 6px 0;
-  white-space: nowrap;  /* keep everything on one line */
+.contact-info p{
+  display:grid;
+  grid-template-columns: max-content 1fr; /* label auto, link fills */
+  column-gap:.6rem;
+  align-items:baseline;
+  white-space:nowrap;
 }
-
-.contact-info strong {
-  flex: 0 0 auto;       /* label stays fixed width */
-}
-
-/* The link takes remaining width and truncates */
-.contact-info a {
-  flex: 1 1 auto;
-  min-width: 0;         /* <-- critical for ellipsis */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-align: left;
-  color: #2d8f2d;
+.contact-info strong{ margin:0; text-align:left; }
+.contact-info a{
+  min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 }
 
 /* Right side: QR group */
-.qr-pair {
-  display: flex;
-  gap: 20px;
-  padding-right: 30px;
+.qr-pair { display: grid; grid-auto-flow: column; gap: 20px; }
+.qr-pair .qr {
+  text-align: center;
 }
+.qr-pair img {
+  display: block;
+  width: 100px; height: 100px; object-fit: contain;
+  border: 1px solid #ccc; border-radius: 4px;
+}
+.qr-pair .label { margin-top: 6px; font-size: 0.9rem; }
 
-/* Mobile: stack nicely */
+/* Mobile */
 @media (max-width: 768px) {
-  .contact-block { gap: 16px; }
-  .qr-pair { padding-right: 0; width: 100%; justify-content: flex-start; }
+  .contact-info strong { flex: 0 0 auto; width: auto; text-align: left; padding-right: .5rem; }
+  .contact-block { grid-template-columns: 1fr; }
+  .qr-pair { justify-content: start; }
 }
 </style>
 
