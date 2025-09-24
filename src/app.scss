@@ -1,37 +1,81 @@
-// Import Bootstrap SCSS variables and styles first
-@import '~bootstrap/scss/bootstrap.scss';
+// already at top:
+ @import '~bootstrap/scss/bootstrap.scss';
+ @import '~bootstrap-vue/src/index.scss';
 
-// Import Bootstrap Vue SCSS variables and styles
-@import '~bootstrap-vue/src/index.scss';
-
-
+/* ---- Fonts ---- */
+/* Variable font (preferred). Put file in public/fonts/ or fix the path below */
 @font-face {
-  font-family: 'Monoid';
-  src: url('assets/fonts/Monoisome-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-VF.woff2") format("woff2"); // or "~@/assets/fonts/FiraCode/woff2/FiraCode-VF.woff2"
+  font-weight: 300 700;   // variable range
   font-style: normal;
+  font-display: swap;
 }
 
+/* Static fallbacks (if you don't have VF) */
 @font-face {
-  font-family: 'Monoid-Bold';
-  src: url('assets/fonts/Monoid-Bold-HalfTight-Small-Dollar-0-1-l-NoCalt.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal; 
-}
-
-@font-face {
-  font-family: 'FiraCode'; 
-  src: url('assets/fonts/FiraCode/woff/FiraCode-Regular.woff') format('woff');
-  font-weight: normal;
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode/woff/FiraCode-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
-
 @font-face {
-  font-family: 'FiraCode-Bold';
-  src: url('assets/fonts/FiraCode/woff/FiraCode-Bold.woff') format('woff');
-  font-weight: normal;
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode/woff/FiraCode-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Optional: Monoid with proper naming (avoid fake bold family) */
+@font-face {
+  font-family: "Monoid";
+  src: url("/fonts/Monoid/Monoisome-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monoid";
+  src: url("/fonts/Monoid/Monoid-Bold-HalfTight-Small-Dollar-0-1-l-NoCalt.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
+/* ---- Apply globally (after Bootstrap) ---- */
+:root {
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
 
+html, body, #app {
+  font-family: var(--font-mono) !important;   /* override Bootstrap body stack */
+  font-weight: 400;
+  font-synthesis-weight: none;                /* no fake bold */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use weight, not fake families */
+strong, b { font-weight: 700; }
+h1, h2, h3, h4, h5, h6 { font-weight: 700; }  /* or 600 if 700 looks too heavy */
+
+blockquote {
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Links styling */
+a {
+  color: #48C9B0; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #F5B041; /* Change color on hover */
+}
+
+body {
+  background-color: #EFF1F4;
+}

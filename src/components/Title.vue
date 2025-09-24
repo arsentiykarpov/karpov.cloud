@@ -1,8 +1,6 @@
 <template>
   <div>
     <strong style="display: block;
-        font-family: FiraCode;
-        font-size: 24px; 
         margin: 0px 0px 0px 0px;
         text-align:left;
         white-space: nowrap;"

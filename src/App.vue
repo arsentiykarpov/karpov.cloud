@@ -1,35 +1,16 @@
 <template>
   <div>
     <Title/> 
-    <b-carousel
-      id="carousel-1"
-      :interval="50000"
-      indicators
-      :no-hover-pause="false"
-      controls
-			fade
-      background="#ababab"
-      class="responsive-carousel"
-      style="margin: 20px; text-shadow: 1px 1px 2px #333;margin-top: 0px;"
-    >
-      <b-carousel-slide img-src="./bg/drums_cropped.jpg" img-width="1024" img-height="480">
-        <Products :mdContentPath="getPath('Products')" />	
-      </b-carousel-slide>
-      
-      <b-carousel-slide img-src="./bg/drums_cropped.jpg">
-        <Products :mdContentPath="getPath('Teamlead')" />	
-      </b-carousel-slide>
-      
-      <b-carousel-slide img-src="./bg/drums_cropped.jpg">
-        <Products :mdContentPath="getPath('Techlead')" />	
-      </b-carousel-slide>
-		</b-carousel>
-
-    <div class="contact-block" style="display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; margin-top: 0px; padding-left: 30px;padding-top: 20px; margin-left: 20px; margin-right:20px; border-radius: 12px; background-color: #f9f9f9; border: 1px solid #ddd;">
+    <div class="cv-grid">
+      <webcv :mdContentPath="getPath('Products')" />	
+      <webcv :mdContentPath="getPath('Teamlead')" />	
+      <webcv :mdContentPath="getPath('Techlead')" />	
+    </div>
+    <div class="contact-block" >
       <div class="contact-info">
-        <p style="font-size: 1.1em;"><strong>Telegram:</strong> <a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
-        <p style="font-size: 1.1em;"><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>
-        <p style="font-size: 1.1em;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859" style="color: #2d8f2d;">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
+        <p><strong>Telegram:</strong> <a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
+        <p><strong>Email:</strong> <a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859" style="color: #2d8f2d;">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
       </div>
 
       <div class="qr-pair" style="display: flex; gap: 20px;padding-right: 30px;">
@@ -53,14 +34,14 @@
 
 <script>
 import {ref, provide} from 'vue';  
-import Products from './components/Products.vue';
+import webcv from './components/webcv.vue';
 import RandomFact from './components/RandomFact.vue';
 import Title from './components/Title.vue';
 
 export default {
   name: 'App',
   components: {
-    Products,
+    webcv,
     RandomFact,
     Title,
   },
@@ -81,136 +62,85 @@ export default {
 </script>
 
 <style scoped>
->>>.carousel-control-prev {
-	width: 5%;
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns on wide screens */
+  gap: 16px;               /* space between cards */
+  height: 80vh;
+  padding: 0 20px;         /* optional: align with your contact block margins */
 }
 
->>>.carousel-control-next {
-	width: 5%;
-}
-
->>>.carousel-caption {
-  height: 85%; 
-	overflow: hidden;
-  color: white; 
-  border-radius: 10px;
-	padding-top: 10px;
-	padding-bottom: 40px;
-	top: 0px;
-	bottom: 0px;
-	left: 5%;
-	right: 5%;
-  text-align: left;
-  font-family: FiraCode;
-}
-
->>>.carousel-caption h5 {
-  font-family:FiraCode-Bold;
-}
-	>>>.carousel-item.active {
-		position: relative;
-		max-height: 70vh;/*why relative parent height not working??? so duplicate Viewport height of parent, kind of hack?*/
-	}
-	
-	>>>.carousel-item{
-		position: relative;
-		max-height: 70vh;/*why relative parent height not working??? so duplicate Viewport height of parent, kind of hack?*/
-	}
-
-  >>>.carousel-item img {
-    opacity: 0.5;
+/* Mobile: stack into 1 column (=> 3 rows) */
+@media (max-width: 768px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
   }
+}
 
-	>>>.carousel-inner {
-		position: relative;
-		overflow: hidden;
-		max-height: 70vh;
-	}
- 
-  >>>.carousel-indicators {
-    margin-top: 20px;
-  }
-/*
-@media (max-width: 200px) {
-	>>>.carousel-caption {
-		max-height: calc(45vh - 80px);
-		min-height: 50%;
-	}
-}*/
-	/* Links styling */
-a {
-  color: #48c774; /* Link color */
-  text-decoration: none; /* Remove underline */
+.cv-grid > * {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  overflow-y: hidden; /* prevents layout jumps if inner content is wider */
 }
 
 a:hover {
   color: #F5B041; /* Change color on hover */
 }
-    .contact-info {
-      flex: 1;
-    }
-    .contact-info strong {
-      font-family: FiraCode;
-      font-size: 14px;
-    }
-    .qr-codes {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      font-family: FiraCode;
-      font-size: 12px;
-    }
-.qr-pair div div {
-  font-family: 'Fira Code', monospace;
-  font-size: 12px;
-}
-</style>
 
-<style>
-/* General styling */
-strong {
-  font-family: 'FiraCode-Bold';
-  font-size: 16px;
+.contact-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px 20px 0;
+  padding: 20px 30px 20px 30px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
 }
 
-blockquote {
-  font-family: 'FiraCode';
-  font-size: 14px;
-  text-align: left;
+/* Left side: labels + links */
+.contact-info {
+  flex: 1 1 360px;   /* can grow & shrink */
+  min-width: 0;      /* <-- required so the link can shrink/ellipsis in flex */
 }
 
-/* Responsive carousel container */
-.responsive-carousel {
-  max-width: 100%;
-  max-height: 70vh; /* Half of the viewport height */
+.contact-info p {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 6px 0;
+  white-space: nowrap;  /* keep everything on one line */
+}
+
+.contact-info strong {
+  flex: 0 0 auto;       /* label stays fixed width */
+}
+
+/* The link takes remaining width and truncates */
+.contact-info a {
+  flex: 1 1 auto;
+  min-width: 0;         /* <-- critical for ellipsis */
   overflow: hidden;
-	border-radius: 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  color: #2d8f2d;
 }
 
-/* Adjust images to fit within the carousel */
-.responsive-carousel img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover; /* Ensure images cover the space without distortion */
-}
-/* Links styling */
-a {
-  font-family: 'FiraCode-Bold';
-  color: #48C9B0; /* Link color */
-  text-decoration: none; /* Remove underline */
+/* Right side: QR group */
+.qr-pair {
+  display: flex;
+  gap: 20px;
+  padding-right: 30px;
 }
 
-a:hover {
-  color: #F5B041; /* Change color on hover */
+/* Mobile: stack nicely */
+@media (max-width: 768px) {
+  .contact-block { gap: 16px; }
+  .qr-pair { padding-right: 0; width: 100%; justify-content: flex-start; }
 }
-
-body {
-  background-color: #EFF1F4;
-}
-/* @media screen and (max-width: 768px) {
-  .responsive-carousel {
-    max-height: 60vh; 
-	} 
-}*/
 </style>
 

@@ -9,7 +9,7 @@ import { ref, computed, onMounted, watch } from "vue";
 import markdownit from "markdown-it";
 
 export default {
-  name: "Products",
+  name: "webcv",
   props: {
     mdContentPath: {
       type: String,
@@ -49,27 +49,22 @@ export default {
 </script>
 
 <style>
-/* Ensure the content takes the full height of the carousel */
-.md-content-conatiner {
-	height: 100%;
-  backdrop-filter: blur(5px); /* Applies a blur effect */
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-  -webkit-backdrop-filter: blur(5px); /* Safari support */
-  border-radius: 6px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
-  color: #fff; /* Text color for readability */
-  overflow: hidden; /* Disable horizontal scrolling */
-  margin-top: 30px;
-  margin-bottom: 50px;
+/* Card container */
+.md-content-container {
+  overflow: hidden;         /* keep rounded corners clean */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
 }
-/* The scrollable container */
+
+/* Inner scroller */
 .scrollable-container {
-	height: 100%;
-	margin: 20px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  overflow-y: auto; 
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  height: 100%;
+  margin: 0;                                /* was 20px — move spacing to padding */
+  padding: 20px 40px 40px 20px;             /* consistent inner spacing */
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Links styling */
