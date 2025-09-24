@@ -1,19 +1,24 @@
-> **Able to**
+#####  My Engineering Approach
 
->> Run fast, on the fly with a yesterday deadline on millions of users.
+######  Able to adapt to the pace
 
->> Run it slowly, thoughtfully.
+- Comfortable working under tight deadlines, even on high-load apps with millions of users.  
+- Equally confident in taking a slower, more thoughtful approach when code quality and long-term stability matter
+- Experienced with A/B testing, [trunk-based development](https://trunkbaseddevelopment.com/), and release monitoring
+- Know how to quickly roll back or switch off features after release if needed
 
->> With A/B tests and [trunk based development](https://trunkbaseddevelopment.com/).
 
->> With post-release monitoring and the ability to quickly rollback/switch product features.
-<br><br><br>
-> **Approximately precisely**
 
->> Realise when it makes sense to bring RxJava, Kotlin Multiplatform, Dagger and other "modern" power technologies into a project or if WebView with a couple of hacks is enough to launch a product.
-<br><br><br>
-> **Understand and forgive**
+######  Choosing tools with purpose
 
->> When a Device farm on Kubernetes with a complex scheme of CI/CD is needed.
+- I bring in advanced tools like RxJava, Kotlin Multiplatform, or Dagger when the project benefits from them
+- But I also know when a simple WebView with some tweaks is enough to test and launch fast
+- I aim to use the right tool for the job, not the most complex one
 
->> When one intern and one small script in repository as CI/CD are enough.
+
+
+######  Understand complexity — and when to avoid it
+
+- I’ve worked with Kubernetes-based device farms, CI/CD pipelines, and production-grade monitoring tools
+- At the same time, I appreciate when a small script and one intern can solve the problem more effectively
+

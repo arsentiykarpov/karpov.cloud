@@ -1,16 +1,21 @@
-> Как **Android разработчик** прошел путь от [Loaders и AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) до [Kotlin Multiplatform](https://www.jetbrains.com/kotlin-multiplatform/), через все версии [RxJava](https://github.com/ReactiveX/RxJava).
-<br><br><br>
-> **Отвечая за крупный финтех продукт необходимо помнить о безопасности приложения.**
+#####  Безопасность и DevOps
 
->> С **Application Security** долго движемся бок о бок. 
+######  Безопасность приложений
 
->> Разработал CTF [Capture The Flag] челлендж для конференции [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4).
+Работая над крупным финтех-продуктом, невозможно обойтись без внимания к безопасности.  
+На всех этапах разработки тесно взаимодействовал с командой AppSec
 
->> Знаю как работать с Frida на Android и Ghidra на Ios. 
-<br><br><br>
-> Последние пару лет интересуют около **DevOps** темы c его **Kubernetes, Argo CD, Tekton piplines, Grafana/Kibana etc.**. 
+- Создал челлендж Capture The Flag для митапа [Qiwi Android Developer Days](https://www.youtube.com/watch?v=NvSvRdzu6H4)
+- Имею практический опыт работы с Frida (Android) и Ghidra (iOS) для анализа безопасности и реверс инжиниринга
 
->> Поднял в Qiwi ферму устройств на Kubernetes. 
 
->> Tekton piplines через ArgoCD + Ansible.
 
+######  DevOps и инфраструктура
+
+В последние годы я также активно занимался DevOps-направлением в мобильной разработке:
+
+- Настроил и внедрил Device Farm на Kubernetes для автоматизированного тестирования
+- Реализовал CI/CD процессы с помощью Tekton Pipelines, Argo CD и Ansible
+- Работал с инструментами мониторинга: Grafana и Kibana
+
+<div style="page-break-after: always;"></div>

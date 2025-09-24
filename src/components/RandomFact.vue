@@ -1,5 +1,5 @@
 <template>
-	<div style="margin:20px">
+	<div>
  		<b-card border-variant="info" class="text-center" title="...">
   <b-card-text>
 		{{ randomFact }}
@@ -19,9 +19,9 @@ export default {
     "12 лет музыкальной школы. Фортепиано и ударные инструменты. Люблю поиграть и пописать музыку.",
     "Полтора года поддерживал j2me (Java 1.2) приложение и разрабатывал на его основе приложение-обертку под девайс Nokia Asha",
     "Возбуждаюсь от NeoVim, Arch Linux, Hyprlane.",
-    "Был домашний питомец -- попугай Ара (огромный такой)",
+    "Был домашний питомец -- попугай Ара (огромный и умный)",
     "Есть рабочий телефон Jolla на Sailfish OS от финской компании. Два Blackberry. Два Samsung Fold.",
-    "Женат, дочка 1 год:) На свадьбу написал мобильное приложение, с 2015 года лежит в открытом репозитории, но код лучше не смотреть.",
+    "Женат, дочка 1.5 года. На свадьбу написал мобильное приложение, с 2015 года лежит в открытом репозитории, но код лучше не смотреть😄.https://github.com/chijikpijik/invitation",
     "Cертификат MBA от PwC 2022 года.", 
     "Сертификат Domain Driven Design от Luxsoft 2019 года."
   ];
@@ -30,9 +30,9 @@ export default {
     "Twelve years of music school in piano and percussions instruments. Love to play and write music.",
     "1.5 year of J2me (Java 1.2) app support and development of app-wrapper for Nokia Asha device based on it.",
     "Addicted to NeoVim, Arch Linux, Hyprlane.",
-    "Had a big macaw bird as a pet",
-    "I have a work phone Jolla on Sailfish OS from a Finnish company. Two Blackberrie. Two Samsung Fold.",
-    "Married, raising one year-old daughter. Made the wedding app which is stored in an open repository since 2015 (but the code is better not to be revisioned:)).",
+    "Had a big macaw parrot as a pet — huge and smart.",
+    "I have a work phone Jolla on Sailfish OS from a Finnish company. Two Blackberries. Two Samsung Fold.",
+    "Built a wedding app for our ceremony — still archived since 2015 (but don’t judge the code 😄) https://github.com/chijikpijik/invitation",
     "Got a PwC issued MBA certificate back in 2022.",
     "Gained Domain Driven Design certificate of Luxsoft 2019." ];
 
@@ -48,8 +48,8 @@ export default {
   
     const moreText = computed(()=>{
         return language.value === 'en' 
-        ? "more"
-        : "ещё"
+        ? "more→"
+        : "ещё→"
     });
 
     var usedIndeces = new Set()
@@ -105,4 +105,26 @@ export default {
 	background-color: transparent;
 	box-shadow: none;
 }		
+::v-deep .btn-outline-info {
+  background-color: #2e7d32;
+  border-color: #2e7d32;
+  color: #fff;
+}
+    
+::v-deep .btn-outline-info:focus,
+::v-deep .btn-outline-info:active,
+::v-deep .btn-outline-info:visited,
+::v-deep .btn-outline-info:focus-visible,
+::v-deep .btn-outline-info:focus-within,
+::v-deep .btn-outline-info:target,
+{
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+}
+
+/* Отдельно hover — если должен отличаться */
+::v-deep .btn-outline-info:hover {
+  background-color: #1b5e20;
+  border-color: #1b5e20;
+}
 </style>

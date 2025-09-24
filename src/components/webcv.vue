@@ -9,7 +9,7 @@ import { ref, computed, onMounted, watch } from "vue";
 import markdownit from "markdown-it";
 
 export default {
-  name: "Products",
+  name: "webcv",
   props: {
     mdContentPath: {
       type: String,
@@ -49,34 +49,35 @@ export default {
 </script>
 
 <style>
-/* Ensure the content takes the full height of the carousel */
-.md-content-conatiner {
-	height: 100%;
-  backdrop-filter: blur(5px); /* Applies a blur effect */
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent dark background */
-  -webkit-backdrop-filter: blur(5px); /* Safari support */
-  border-radius: 6px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
-  color: #fff; /* Text color for readability */
-  overflow: hidden; /* Disable horizontal scrolling */
+/* Card container */
+.md-content-container {
+  overflow: hidden;         /* keep rounded corners clean */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background: #fff;
 }
-/* The scrollable container */
+
+/* Inner scroller */
 .scrollable-container {
-	height: 100%;
-	margin: 20px;
-  padding-right: 40px;
-  padding-bottom: 20px;
-  overflow-y: auto; 
-  overflow-x: hidden; /* Disable horizontal scrolling */
+  height: 100%;
+  margin: 0;                                /* was 20px — move spacing to padding */
+  padding: 20px 40px 40px 20px;             /* consistent inner spacing */
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Links styling */
-blockquote a {
-  color: #48c774; /* Link color */
+blockquote a,
+p a,
+li a{
+  color: #2e7d32; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 
-blockquote a:hover {
-  color: #F5B041; /* Change color on hover */
+p a:hover,
+blockquote a:hover,
+li a:hover {
+  color: #1b5e20;/* Change color on hover */
 }
 </style>
