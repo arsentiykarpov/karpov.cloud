@@ -25,9 +25,13 @@ generate_pdf() {
 
     cat $files > "$output_md"
 
-    pandoc "$output_md" -f markdown -t html5 -o "$output_html" \
-        --metadata title="Document ($lang)" --resource-path=.:../../public:../../: \
-        || { echo "❌ Failed to generate PDF."; return 1; }
+    pandoc "$output_md" \
+      -f markdown \
+      -t html5 \
+      -s \
+      --css "./styles/print.css" \
+      --resource-path=".:$(pwd)" \
+      -o "$output_html"
 
     echo "✅ Successfully created: $output_html"
     firefox "$output_html"
@@ -35,7 +39,9 @@ generate_pdf() {
     chromium --headless \
          --disable-gpu \
          --no-margins \
+         --no-sandbox \
          --no-pdf-header-footer \
+         --run-all-compositor-stages-before-draw \
          --virtual-time-budget=10000 \
          --print-to-pdf="$output_pdf"\
          "$output_html"

@@ -1,0 +1,98 @@
+/* ---- Fonts (relative to the HTML file in public/) ---- */
+@font-face {
+  font-family: "Fira Code";
+  src: url("fonts/FiraCode-VF.woff2") format("woff2");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("fonts/FiraCode-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fira Code";
+  src: url("fonts/FiraCode-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monoid";
+  src: url("fonts/Monoisome-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monoid";
+  src: url("fonts/Monoid-Bold-HalfTight-Small-Dollar-0-1-l-NoCalt.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Print & page setup ---- */
+@page {
+  size: A4;
+  margin: 12mm;
+}
+html, body {
+  height: 100%;
+}
+body {
+  /* For PDF, keep background white; Chrom(e|ium) won’t print page background unless flags */
+  background: #fff;
+  color: #222;
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.35;
+  font-size: 12.5px; /* tune for density */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { font-weight: 700; margin: 0 0 6px; }
+h1 { font-size: 22px; }
+h2 { font-size: 18px; }
+h3 { font-size: 15px; }
+
+/* Paragraphs and lists */
+p, ul, ol { margin: 0 0 6px; }
+
+/* Links */
+a {
+  color: #48C9B0;
+  text-decoration: none;
+}
+a:hover { color: #F5B041; }
+
+/* Blockquotes */
+blockquote {
+  font-size: 12px;
+  margin: 6px 0;
+  padding-left: 10px;
+  border-left: 3px solid #ddd;
+}
+
+/* Avoid awkward breaks */
+h1, h2, h3 { break-after: avoid; }
+h1 + p, h2 + p, h3 + p { break-before: avoid; }
+
+/* Manual page break helper in MD: <div class="page-break"></div> */
+.page-break { break-before: page; }
+
+/* Tables (if any) */
+table { width: 100%; border-collapse: collapse; margin: 6px 0; }
+th, td { border: 1px solid #ddd; padding: 4px 6px; }
+th { font-weight: 700; }
+
+/* Screen tweaks when you open the HTML in a browser */
+@media screen {
+  body { padding: 16px; background: #EFF1F4; }
+}
+

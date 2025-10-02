@@ -13,7 +13,8 @@ As an Android Developer, I’ve gone from working with Loaders and AsyncTask to 
 - Joined Qiwi in March 2013 as the second Android developer
 - Helped build and launch the first production versions of Qiwi Wallet
 - Promoted to Android Team Lead in 2016
-
+- Led a dev team up to 15 engineers
+- Mentored 6 interns up to Senior level
 
 
 ######  Visa payWave (Contactless Payments)
@@ -41,7 +42,7 @@ As an Android Developer, I’ve gone from working with Loaders and AsyncTask to 
 
 ######  Device Farm Integration
 
-- Integrated Device Farm on Kubernetes into Qiwi’s CI/CD
+- Implemented a Kubernetes-based Device Farm into CI/CD processes, reducing Time to Market by a factor of 10.
 - Presented the setup at Qiwi Android Developer Days
 
 
