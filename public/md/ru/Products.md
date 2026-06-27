@@ -12,7 +12,8 @@ Android-разработчик → Тимлид Android-команды
 - Присоединился к Qiwi в марте 2013 года как второй Android-разработчик
 - Участвовал в создании и выпуске первых версий Qiwi Wallet
 - В 2016 году стал тимлидом Android-команды
-
+- Руководил группой разработки 15 человек
+- Заменторил 6 стажеров до уровня senior
 
 
 ######  Visa payWave (Бесконтактные платежи)
@@ -40,7 +41,7 @@ Android-разработчик → Тимлид Android-команды
 
 ######  Интеграция Device Farm
 
-- Внедрил Device Farm на базе Kubernetes в процессы CI/CD
+- Внедрил Device Farm на базе Kubernetes в процессы CI/CD, чем ускорил Time to market в 10 раз
 - Представил кейс на  [Qiwi Android Developer Days](https://www.youtube.com/watch?v=_DBV36UJBaI)
 
 

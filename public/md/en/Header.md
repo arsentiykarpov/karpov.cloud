@@ -53,14 +53,6 @@ body {
 }
 </style>
 <img src="I1.jpg" width="300" style="display:block;margin-left:auto;margin-right:auto;" >
-
-<strong style="display: block;
-    font-family: FiraCode;
-    font-size: 24px; 
-    margin: 0px 0px 0px 0px;
-    text-align:left;
-    white-space: nowrap;"
->
 <section class="intro">
 <h1>  Arsentii Karpov <i class="fas fa-battery-full"></i></h1>
 <h2 class="roles">
@@ -74,6 +66,7 @@ Android Developer <i class="fa-brands fa-android"></i>
 <div class="contact-info">
 <p style="font-size: 1.1em; margin-top: 0px;"><strong>Telegram: </strong><a href="https://t.me/arsengizer" style="color: #2d8f2d;">@arsengizer</a></p>
 <p style="font-size: 1.1em;"><strong>Email: </strong><a href="mailto:arsentiy.karpov@gmail.com" style="color: #2d8f2d;">arsentiy.karpov@gmail.com</a></p>
+<p style="font-size: 1.1em;"><strong>Web: </strong><a href="https://quine.life" style="color: #2d8f2d;">https://quine.life</a></p>
 <p style="font-size: 1.1em;"><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/arsentiy-karpov-4171a859" style="color: #2d8f2d;">https://www.linkedin.com/in/arsentiy-karpov-4171a859</a></p>
 </div>
 <div class="qr-pair" style="display: flex; gap: 20px;padding-right: 30px;">
