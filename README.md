@@ -1,4 +1,4 @@
-# cv1
+# https://quine.life
 
 ## Project setup
 ```
